@@ -1,0 +1,15 @@
+{
+  "run_id": "d589d235e1a6cb8f20849987e6a57390b1213293a6f70f1257e48a2e465b9a50",
+  "images": 95,
+  "computed": 95,
+  "cache_hits": 0,
+  "recovered_jobs": 0,
+  "job_counts": {
+    "succeeded": 95
+  },
+  "seconds_excluding_model_load": 8.567682250000871,
+  "effective_images_per_second": 11.088179653253404,
+  "p50_compute_seconds": 0.08878774999902816,
+  "p95_compute_seconds": 0.09104238760010049,
+  "latency_note": "Per-image original compute latency; throughput includes cache hits when present."
+}

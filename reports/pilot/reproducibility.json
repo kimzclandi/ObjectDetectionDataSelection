@@ -1,0 +1,15 @@
+{
+  "dataset": {
+    "verified_images": 240,
+    "dataset_version": "faff2298d44c5a7801b9c122fb9c3b7d0626b60c146b89fcfefe6c90c22e41df"
+  },
+  "identical_selection_plans": 9,
+  "identical_recomputed_evaluations": 10,
+  "frozen_tensors_unchanged": 280,
+  "predictor_actually_updated": true,
+  "repeated_training_identical_state_tensors": 284,
+  "uncached_inference_images": 12,
+  "maximum_box_score_difference": 0.0,
+  "scope": "Same-host CPU rerun; full warmup training, 12-image fresh inference, all saved evaluations and selections. Not a full nine-candidate independent rerun or cross-platform guarantee.",
+  "status": "passed"
+}

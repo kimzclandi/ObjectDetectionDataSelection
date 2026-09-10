@@ -1,0 +1,37 @@
+{
+  "config": {
+    "schema_version": 1,
+    "data_limit": 240,
+    "device": "cpu",
+    "warmup_seed": 42,
+    "warmup_epochs": 2,
+    "strategy_seeds": [
+      17,
+      29,
+      43
+    ],
+    "strategies": [
+      "random",
+      "uncertainty",
+      "diverse"
+    ],
+    "budget_images": 12,
+    "candidate_epochs": 2,
+    "learning_rate": 0.005,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "trainable": "roi_heads.box_predictor only; all other parameters and backbone buffers frozen",
+    "score_threshold": 0.5,
+    "iou_threshold": 0.5,
+    "gate": {
+      "max_overall_AP_drop": 0.01,
+      "max_night_recall_drop": 0.05,
+      "minimum_night_images": 20,
+      "minimum_night_objects": 100,
+      "note": "Illustrative offline gate; insufficient night support yields INSUFFICIENT_EVIDENCE, never PASS"
+    }
+  },
+  "dataset_version": "faff2298d44c5a7801b9c122fb9c3b7d0626b60c146b89fcfefe6c90c22e41df",
+  "config_sha256": "726528e8c4f18f974c1aa665ea8a38aa7fa048a4802df79f7935ab10f9a35619",
+  "protocol": "Warm-start on seed only; freeze pool inference; 3 paired seeds x 3 samplers. All candidates start from the SAME warm-start checkpoint. No test-driven selection or hyperparameter search. Pilot, not significance study."
+}

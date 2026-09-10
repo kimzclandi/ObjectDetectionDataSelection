@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "driving-data-engine"
+version = "0.1.0"
+description = "Auditable road detection data selection and real-model pilot experiments"
+requires-python = ">=3.12,<3.13"
+dependencies = ["torch", "torchvision", "pillow", "numpy", "pandas", "pyarrow", "duckdb", "pycocotools", "requests"]
+
+[project.optional-dependencies]
+dashboard = ["streamlit"]
+dev = ["pytest", "ruff"]
+distributed = ["ray[data]"]
+
+[project.scripts]
+driving-data = "driving_data.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 110
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]

@@ -1,0 +1,827 @@
+{
+  "dataset_version": "faff2298d44c5a7801b9c122fb9c3b7d0626b60c146b89fcfefe6c90c22e41df",
+  "inference_run_id": "d75256f87e733b5dec258ef2b6fb36f05b9ed1c970748edfb1581df5e563a7d0",
+  "pool_contract_sha256": "03627bda9f6078ca3ffb0bef1c73acea6ba5c17177201d3235e8784f7a13f1e0",
+  "plans": [
+    {
+      "strategy": "random",
+      "seed": 17,
+      "budget_images": 12,
+      "selected": [
+        {
+          "sample_id": "c76fbaa1-990ee15a",
+          "rank": 1,
+          "uncertainty_proxy": 0.6214620475586656,
+          "no_detections": false,
+          "group_id": "c76fbaa1"
+        },
+        {
+          "sample_id": "c1bbc01a-cd5108c4",
+          "rank": 2,
+          "uncertainty_proxy": 0.570904996303658,
+          "no_detections": false,
+          "group_id": "c1bbc01a"
+        },
+        {
+          "sample_id": "b66f7339-b14741dc",
+          "rank": 3,
+          "uncertainty_proxy": 0.6073741210094787,
+          "no_detections": false,
+          "group_id": "b66f7339"
+        },
+        {
+          "sample_id": "c2987e05-9c59c386",
+          "rank": 4,
+          "uncertainty_proxy": 0.6085567304080182,
+          "no_detections": false,
+          "group_id": "c2987e05"
+        },
+        {
+          "sample_id": "bd60211c-16e100ad",
+          "rank": 5,
+          "uncertainty_proxy": 0.7535974806643578,
+          "no_detections": false,
+          "group_id": "bd60211c"
+        },
+        {
+          "sample_id": "c1b3582d-7a6b9124",
+          "rank": 6,
+          "uncertainty_proxy": 0.6827843627090499,
+          "no_detections": false,
+          "group_id": "c1b3582d"
+        },
+        {
+          "sample_id": "b68445f5-cf8714b0",
+          "rank": 7,
+          "uncertainty_proxy": 0.5149478528361253,
+          "no_detections": false,
+          "group_id": "b68445f5"
+        },
+        {
+          "sample_id": "c5b7b466-4adbd41c",
+          "rank": 8,
+          "uncertainty_proxy": 0.7288630900456626,
+          "no_detections": false,
+          "group_id": "c5b7b466"
+        },
+        {
+          "sample_id": "b51d0756-8c5120da",
+          "rank": 9,
+          "uncertainty_proxy": 0.7814575613243403,
+          "no_detections": false,
+          "group_id": "b51d0756"
+        },
+        {
+          "sample_id": "bc082805-7738f543",
+          "rank": 10,
+          "uncertainty_proxy": 0.6802700557180598,
+          "no_detections": false,
+          "group_id": "bc082805"
+        },
+        {
+          "sample_id": "b6219281-0695c9fd",
+          "rank": 11,
+          "uncertainty_proxy": 0.8865878077612879,
+          "no_detections": false,
+          "group_id": "b6219281"
+        },
+        {
+          "sample_id": "c02d414a-7176a61e",
+          "rank": 12,
+          "uncertainty_proxy": 0.5912210137212045,
+          "no_detections": false,
+          "group_id": "c02d414a"
+        }
+      ]
+    },
+    {
+      "strategy": "uncertainty",
+      "seed": 17,
+      "budget_images": 12,
+      "selected": [
+        {
+          "sample_id": "b6219281-0695c9fd",
+          "rank": 1,
+          "uncertainty_proxy": 0.8865878077612879,
+          "no_detections": false,
+          "group_id": "b6219281"
+        },
+        {
+          "sample_id": "c24838fd-e77a2501",
+          "rank": 2,
+          "uncertainty_proxy": 0.8768693816146877,
+          "no_detections": false,
+          "group_id": "c24838fd"
+        },
+        {
+          "sample_id": "b3a087a4-9d116610",
+          "rank": 3,
+          "uncertainty_proxy": 0.8572931488048472,
+          "no_detections": false,
+          "group_id": "b3a087a4"
+        },
+        {
+          "sample_id": "baa9acbe-f3af19f6",
+          "rank": 4,
+          "uncertainty_proxy": 0.8557838040551993,
+          "no_detections": false,
+          "group_id": "baa9acbe"
+        },
+        {
+          "sample_id": "bab692c9-3cd892ff",
+          "rank": 5,
+          "uncertainty_proxy": 0.8497123317793653,
+          "no_detections": false,
+          "group_id": "bab692c9"
+        },
+        {
+          "sample_id": "c6921a51-7d615920",
+          "rank": 6,
+          "uncertainty_proxy": 0.8400771627895767,
+          "no_detections": false,
+          "group_id": "c6921a51"
+        },
+        {
+          "sample_id": "b77d2f48-020ecd39",
+          "rank": 7,
+          "uncertainty_proxy": 0.8362044288842132,
+          "no_detections": false,
+          "group_id": "b77d2f48"
+        },
+        {
+          "sample_id": "b8c3f870-db0f236f",
+          "rank": 8,
+          "uncertainty_proxy": 0.8225197473764778,
+          "no_detections": false,
+          "group_id": "b8c3f870"
+        },
+        {
+          "sample_id": "b7b132fc-ba819254",
+          "rank": 9,
+          "uncertainty_proxy": 0.8084840537421467,
+          "no_detections": false,
+          "group_id": "b7b132fc"
+        },
+        {
+          "sample_id": "bcaf73c1-c58fee95",
+          "rank": 10,
+          "uncertainty_proxy": 0.7883702820378589,
+          "no_detections": false,
+          "group_id": "bcaf73c1"
+        },
+        {
+          "sample_id": "b4712ebe-9ecac024",
+          "rank": 11,
+          "uncertainty_proxy": 0.7831942868511478,
+          "no_detections": false,
+          "group_id": "b4712ebe"
+        },
+        {
+          "sample_id": "b51d0756-8c5120da",
+          "rank": 12,
+          "uncertainty_proxy": 0.7814575613243403,
+          "no_detections": false,
+          "group_id": "b51d0756"
+        }
+      ]
+    },
+    {
+      "strategy": "diverse",
+      "seed": 17,
+      "budget_images": 12,
+      "selected": [
+        {
+          "sample_id": "b6219281-0695c9fd",
+          "rank": 1,
+          "uncertainty_proxy": 0.8865878077612879,
+          "no_detections": false,
+          "group_id": "b6219281"
+        },
+        {
+          "sample_id": "b3a087a4-9d116610",
+          "rank": 2,
+          "uncertainty_proxy": 0.8572931488048472,
+          "no_detections": false,
+          "group_id": "b3a087a4"
+        },
+        {
+          "sample_id": "c24838fd-e77a2501",
+          "rank": 3,
+          "uncertainty_proxy": 0.8768693816146877,
+          "no_detections": false,
+          "group_id": "c24838fd"
+        },
+        {
+          "sample_id": "baa9acbe-f3af19f6",
+          "rank": 4,
+          "uncertainty_proxy": 0.8557838040551993,
+          "no_detections": false,
+          "group_id": "baa9acbe"
+        },
+        {
+          "sample_id": "c3714b40-1610471f",
+          "rank": 5,
+          "uncertainty_proxy": 0.7771138984236221,
+          "no_detections": false,
+          "group_id": "c3714b40"
+        },
+        {
+          "sample_id": "bab692c9-3cd892ff",
+          "rank": 6,
+          "uncertainty_proxy": 0.8497123317793653,
+          "no_detections": false,
+          "group_id": "bab692c9"
+        },
+        {
+          "sample_id": "c6921a51-7d615920",
+          "rank": 7,
+          "uncertainty_proxy": 0.8400771627895767,
+          "no_detections": false,
+          "group_id": "c6921a51"
+        },
+        {
+          "sample_id": "b77d2f48-020ecd39",
+          "rank": 8,
+          "uncertainty_proxy": 0.8362044288842132,
+          "no_detections": false,
+          "group_id": "b77d2f48"
+        },
+        {
+          "sample_id": "b8c3f870-db0f236f",
+          "rank": 9,
+          "uncertainty_proxy": 0.8225197473764778,
+          "no_detections": false,
+          "group_id": "b8c3f870"
+        },
+        {
+          "sample_id": "b7b132fc-ba819254",
+          "rank": 10,
+          "uncertainty_proxy": 0.8084840537421467,
+          "no_detections": false,
+          "group_id": "b7b132fc"
+        },
+        {
+          "sample_id": "b4712ebe-9ecac024",
+          "rank": 11,
+          "uncertainty_proxy": 0.7831942868511478,
+          "no_detections": false,
+          "group_id": "b4712ebe"
+        },
+        {
+          "sample_id": "bcaf73c1-c58fee95",
+          "rank": 12,
+          "uncertainty_proxy": 0.7883702820378589,
+          "no_detections": false,
+          "group_id": "bcaf73c1"
+        }
+      ]
+    },
+    {
+      "strategy": "random",
+      "seed": 29,
+      "budget_images": 12,
+      "selected": [
+        {
+          "sample_id": "b3f479a1-b85845b3",
+          "rank": 1,
+          "uncertainty_proxy": 0.731346712931232,
+          "no_detections": false,
+          "group_id": "b3f479a1"
+        },
+        {
+          "sample_id": "bcaf73c1-c58fee95",
+          "rank": 2,
+          "uncertainty_proxy": 0.7883702820378589,
+          "no_detections": false,
+          "group_id": "bcaf73c1"
+        },
+        {
+          "sample_id": "b3683422-cce330a8",
+          "rank": 3,
+          "uncertainty_proxy": 0.744085767958658,
+          "no_detections": false,
+          "group_id": "b3683422"
+        },
+        {
+          "sample_id": "b5a4b486-dde596cb",
+          "rank": 4,
+          "uncertainty_proxy": 0.5930496428843088,
+          "no_detections": false,
+          "group_id": "b5a4b486"
+        },
+        {
+          "sample_id": "c91e8a26-3025d41e",
+          "rank": 5,
+          "uncertainty_proxy": 0.7078893084813646,
+          "no_detections": false,
+          "group_id": "c91e8a26"
+        },
+        {
+          "sample_id": "b3a087a4-9d116610",
+          "rank": 6,
+          "uncertainty_proxy": 0.8572931488048472,
+          "no_detections": false,
+          "group_id": "b3a087a4"
+        },
+        {
+          "sample_id": "b91dd730-8e0a1a8f",
+          "rank": 7,
+          "uncertainty_proxy": 0.5920038386801753,
+          "no_detections": false,
+          "group_id": "b91dd730"
+        },
+        {
+          "sample_id": "b22e02cd-6af68e18",
+          "rank": 8,
+          "uncertainty_proxy": 0.648493105903904,
+          "no_detections": false,
+          "group_id": "b22e02cd"
+        },
+        {
+          "sample_id": "b657d595-af4a9aee",
+          "rank": 9,
+          "uncertainty_proxy": 0.6193646500612731,
+          "no_detections": false,
+          "group_id": "b657d595"
+        },
+        {
+          "sample_id": "c5b7b466-c3bd479a",
+          "rank": 10,
+          "uncertainty_proxy": 0.6584341926670686,
+          "no_detections": false,
+          "group_id": "c5b7b466"
+        },
+        {
+          "sample_id": "c8fddab0-13dbb312",
+          "rank": 11,
+          "uncertainty_proxy": 0.667675086695027,
+          "no_detections": false,
+          "group_id": "c8fddab0"
+        },
+        {
+          "sample_id": "c249fd49-2b590a59",
+          "rank": 12,
+          "uncertainty_proxy": 0.695136744834037,
+          "no_detections": false,
+          "group_id": "c249fd49"
+        }
+      ]
+    },
+    {
+      "strategy": "uncertainty",
+      "seed": 29,
+      "budget_images": 12,
+      "selected": [
+        {
+          "sample_id": "b6219281-0695c9fd",
+          "rank": 1,
+          "uncertainty_proxy": 0.8865878077612879,
+          "no_detections": false,
+          "group_id": "b6219281"
+        },
+        {
+          "sample_id": "c24838fd-e77a2501",
+          "rank": 2,
+          "uncertainty_proxy": 0.8768693816146877,
+          "no_detections": false,
+          "group_id": "c24838fd"
+        },
+        {
+          "sample_id": "b3a087a4-9d116610",
+          "rank": 3,
+          "uncertainty_proxy": 0.8572931488048472,
+          "no_detections": false,
+          "group_id": "b3a087a4"
+        },
+        {
+          "sample_id": "baa9acbe-f3af19f6",
+          "rank": 4,
+          "uncertainty_proxy": 0.8557838040551993,
+          "no_detections": false,
+          "group_id": "baa9acbe"
+        },
+        {
+          "sample_id": "bab692c9-3cd892ff",
+          "rank": 5,
+          "uncertainty_proxy": 0.8497123317793653,
+          "no_detections": false,
+          "group_id": "bab692c9"
+        },
+        {
+          "sample_id": "c6921a51-7d615920",
+          "rank": 6,
+          "uncertainty_proxy": 0.8400771627895767,
+          "no_detections": false,
+          "group_id": "c6921a51"
+        },
+        {
+          "sample_id": "b77d2f48-020ecd39",
+          "rank": 7,
+          "uncertainty_proxy": 0.8362044288842132,
+          "no_detections": false,
+          "group_id": "b77d2f48"
+        },
+        {
+          "sample_id": "b8c3f870-db0f236f",
+          "rank": 8,
+          "uncertainty_proxy": 0.8225197473764778,
+          "no_detections": false,
+          "group_id": "b8c3f870"
+        },
+        {
+          "sample_id": "b7b132fc-ba819254",
+          "rank": 9,
+          "uncertainty_proxy": 0.8084840537421467,
+          "no_detections": false,
+          "group_id": "b7b132fc"
+        },
+        {
+          "sample_id": "bcaf73c1-c58fee95",
+          "rank": 10,
+          "uncertainty_proxy": 0.7883702820378589,
+          "no_detections": false,
+          "group_id": "bcaf73c1"
+        },
+        {
+          "sample_id": "b4712ebe-9ecac024",
+          "rank": 11,
+          "uncertainty_proxy": 0.7831942868511478,
+          "no_detections": false,
+          "group_id": "b4712ebe"
+        },
+        {
+          "sample_id": "b51d0756-8c5120da",
+          "rank": 12,
+          "uncertainty_proxy": 0.7814575613243403,
+          "no_detections": false,
+          "group_id": "b51d0756"
+        }
+      ]
+    },
+    {
+      "strategy": "diverse",
+      "seed": 29,
+      "budget_images": 12,
+      "selected": [
+        {
+          "sample_id": "b6219281-0695c9fd",
+          "rank": 1,
+          "uncertainty_proxy": 0.8865878077612879,
+          "no_detections": false,
+          "group_id": "b6219281"
+        },
+        {
+          "sample_id": "b3a087a4-9d116610",
+          "rank": 2,
+          "uncertainty_proxy": 0.8572931488048472,
+          "no_detections": false,
+          "group_id": "b3a087a4"
+        },
+        {
+          "sample_id": "c24838fd-e77a2501",
+          "rank": 3,
+          "uncertainty_proxy": 0.8768693816146877,
+          "no_detections": false,
+          "group_id": "c24838fd"
+        },
+        {
+          "sample_id": "baa9acbe-f3af19f6",
+          "rank": 4,
+          "uncertainty_proxy": 0.8557838040551993,
+          "no_detections": false,
+          "group_id": "baa9acbe"
+        },
+        {
+          "sample_id": "c3714b40-1610471f",
+          "rank": 5,
+          "uncertainty_proxy": 0.7771138984236221,
+          "no_detections": false,
+          "group_id": "c3714b40"
+        },
+        {
+          "sample_id": "bab692c9-3cd892ff",
+          "rank": 6,
+          "uncertainty_proxy": 0.8497123317793653,
+          "no_detections": false,
+          "group_id": "bab692c9"
+        },
+        {
+          "sample_id": "c6921a51-7d615920",
+          "rank": 7,
+          "uncertainty_proxy": 0.8400771627895767,
+          "no_detections": false,
+          "group_id": "c6921a51"
+        },
+        {
+          "sample_id": "b77d2f48-020ecd39",
+          "rank": 8,
+          "uncertainty_proxy": 0.8362044288842132,
+          "no_detections": false,
+          "group_id": "b77d2f48"
+        },
+        {
+          "sample_id": "b8c3f870-db0f236f",
+          "rank": 9,
+          "uncertainty_proxy": 0.8225197473764778,
+          "no_detections": false,
+          "group_id": "b8c3f870"
+        },
+        {
+          "sample_id": "b7b132fc-ba819254",
+          "rank": 10,
+          "uncertainty_proxy": 0.8084840537421467,
+          "no_detections": false,
+          "group_id": "b7b132fc"
+        },
+        {
+          "sample_id": "b4712ebe-9ecac024",
+          "rank": 11,
+          "uncertainty_proxy": 0.7831942868511478,
+          "no_detections": false,
+          "group_id": "b4712ebe"
+        },
+        {
+          "sample_id": "bcaf73c1-c58fee95",
+          "rank": 12,
+          "uncertainty_proxy": 0.7883702820378589,
+          "no_detections": false,
+          "group_id": "bcaf73c1"
+        }
+      ]
+    },
+    {
+      "strategy": "random",
+      "seed": 43,
+      "budget_images": 12,
+      "selected": [
+        {
+          "sample_id": "ba65c274-e0f6a546",
+          "rank": 1,
+          "uncertainty_proxy": 0.7407645755983462,
+          "no_detections": false,
+          "group_id": "ba65c274"
+        },
+        {
+          "sample_id": "c3e986e8-1d7a6ddc",
+          "rank": 2,
+          "uncertainty_proxy": 0.6209659769167214,
+          "no_detections": false,
+          "group_id": "c3e986e8"
+        },
+        {
+          "sample_id": "b8a795ee-21cbb3d1",
+          "rank": 3,
+          "uncertainty_proxy": 0.4654987892510879,
+          "no_detections": false,
+          "group_id": "b8a795ee"
+        },
+        {
+          "sample_id": "b91dd730-8e0a1a8f",
+          "rank": 4,
+          "uncertainty_proxy": 0.5920038386801753,
+          "no_detections": false,
+          "group_id": "b91dd730"
+        },
+        {
+          "sample_id": "b206a78b-99f405ab",
+          "rank": 5,
+          "uncertainty_proxy": 0.7532280061866777,
+          "no_detections": false,
+          "group_id": "b206a78b"
+        },
+        {
+          "sample_id": "b5a4b486-dde596cb",
+          "rank": 6,
+          "uncertainty_proxy": 0.5930496428843088,
+          "no_detections": false,
+          "group_id": "b5a4b486"
+        },
+        {
+          "sample_id": "bee09035-01100c39",
+          "rank": 7,
+          "uncertainty_proxy": 0.5346039158263106,
+          "no_detections": false,
+          "group_id": "bee09035"
+        },
+        {
+          "sample_id": "c540a708-f9601c77",
+          "rank": 8,
+          "uncertainty_proxy": 0.43364810672063125,
+          "no_detections": false,
+          "group_id": "c540a708"
+        },
+        {
+          "sample_id": "c33251a6-fa2a8810",
+          "rank": 9,
+          "uncertainty_proxy": 0.6882215302373292,
+          "no_detections": false,
+          "group_id": "c33251a6"
+        },
+        {
+          "sample_id": "c6a4abc9-35b69a8f",
+          "rank": 10,
+          "uncertainty_proxy": 0.6062556337536622,
+          "no_detections": false,
+          "group_id": "c6a4abc9"
+        },
+        {
+          "sample_id": "b7b32a5f-87311a3a",
+          "rank": 11,
+          "uncertainty_proxy": 0.46895392963732535,
+          "no_detections": false,
+          "group_id": "b7b32a5f"
+        },
+        {
+          "sample_id": "bb0479a0-b3c8e0ea",
+          "rank": 12,
+          "uncertainty_proxy": 0.3314824121776252,
+          "no_detections": false,
+          "group_id": "bb0479a0"
+        }
+      ]
+    },
+    {
+      "strategy": "uncertainty",
+      "seed": 43,
+      "budget_images": 12,
+      "selected": [
+        {
+          "sample_id": "b6219281-0695c9fd",
+          "rank": 1,
+          "uncertainty_proxy": 0.8865878077612879,
+          "no_detections": false,
+          "group_id": "b6219281"
+        },
+        {
+          "sample_id": "c24838fd-e77a2501",
+          "rank": 2,
+          "uncertainty_proxy": 0.8768693816146877,
+          "no_detections": false,
+          "group_id": "c24838fd"
+        },
+        {
+          "sample_id": "b3a087a4-9d116610",
+          "rank": 3,
+          "uncertainty_proxy": 0.8572931488048472,
+          "no_detections": false,
+          "group_id": "b3a087a4"
+        },
+        {
+          "sample_id": "baa9acbe-f3af19f6",
+          "rank": 4,
+          "uncertainty_proxy": 0.8557838040551993,
+          "no_detections": false,
+          "group_id": "baa9acbe"
+        },
+        {
+          "sample_id": "bab692c9-3cd892ff",
+          "rank": 5,
+          "uncertainty_proxy": 0.8497123317793653,
+          "no_detections": false,
+          "group_id": "bab692c9"
+        },
+        {
+          "sample_id": "c6921a51-7d615920",
+          "rank": 6,
+          "uncertainty_proxy": 0.8400771627895767,
+          "no_detections": false,
+          "group_id": "c6921a51"
+        },
+        {
+          "sample_id": "b77d2f48-020ecd39",
+          "rank": 7,
+          "uncertainty_proxy": 0.8362044288842132,
+          "no_detections": false,
+          "group_id": "b77d2f48"
+        },
+        {
+          "sample_id": "b8c3f870-db0f236f",
+          "rank": 8,
+          "uncertainty_proxy": 0.8225197473764778,
+          "no_detections": false,
+          "group_id": "b8c3f870"
+        },
+        {
+          "sample_id": "b7b132fc-ba819254",
+          "rank": 9,
+          "uncertainty_proxy": 0.8084840537421467,
+          "no_detections": false,
+          "group_id": "b7b132fc"
+        },
+        {
+          "sample_id": "bcaf73c1-c58fee95",
+          "rank": 10,
+          "uncertainty_proxy": 0.7883702820378589,
+          "no_detections": false,
+          "group_id": "bcaf73c1"
+        },
+        {
+          "sample_id": "b4712ebe-9ecac024",
+          "rank": 11,
+          "uncertainty_proxy": 0.7831942868511478,
+          "no_detections": false,
+          "group_id": "b4712ebe"
+        },
+        {
+          "sample_id": "b51d0756-8c5120da",
+          "rank": 12,
+          "uncertainty_proxy": 0.7814575613243403,
+          "no_detections": false,
+          "group_id": "b51d0756"
+        }
+      ]
+    },
+    {
+      "strategy": "diverse",
+      "seed": 43,
+      "budget_images": 12,
+      "selected": [
+        {
+          "sample_id": "b6219281-0695c9fd",
+          "rank": 1,
+          "uncertainty_proxy": 0.8865878077612879,
+          "no_detections": false,
+          "group_id": "b6219281"
+        },
+        {
+          "sample_id": "b3a087a4-9d116610",
+          "rank": 2,
+          "uncertainty_proxy": 0.8572931488048472,
+          "no_detections": false,
+          "group_id": "b3a087a4"
+        },
+        {
+          "sample_id": "c24838fd-e77a2501",
+          "rank": 3,
+          "uncertainty_proxy": 0.8768693816146877,
+          "no_detections": false,
+          "group_id": "c24838fd"
+        },
+        {
+          "sample_id": "baa9acbe-f3af19f6",
+          "rank": 4,
+          "uncertainty_proxy": 0.8557838040551993,
+          "no_detections": false,
+          "group_id": "baa9acbe"
+        },
+        {
+          "sample_id": "c3714b40-1610471f",
+          "rank": 5,
+          "uncertainty_proxy": 0.7771138984236221,
+          "no_detections": false,
+          "group_id": "c3714b40"
+        },
+        {
+          "sample_id": "bab692c9-3cd892ff",
+          "rank": 6,
+          "uncertainty_proxy": 0.8497123317793653,
+          "no_detections": false,
+          "group_id": "bab692c9"
+        },
+        {
+          "sample_id": "c6921a51-7d615920",
+          "rank": 7,
+          "uncertainty_proxy": 0.8400771627895767,
+          "no_detections": false,
+          "group_id": "c6921a51"
+        },
+        {
+          "sample_id": "b77d2f48-020ecd39",
+          "rank": 8,
+          "uncertainty_proxy": 0.8362044288842132,
+          "no_detections": false,
+          "group_id": "b77d2f48"
+        },
+        {
+          "sample_id": "b8c3f870-db0f236f",
+          "rank": 9,
+          "uncertainty_proxy": 0.8225197473764778,
+          "no_detections": false,
+          "group_id": "b8c3f870"
+        },
+        {
+          "sample_id": "b7b132fc-ba819254",
+          "rank": 10,
+          "uncertainty_proxy": 0.8084840537421467,
+          "no_detections": false,
+          "group_id": "b7b132fc"
+        },
+        {
+          "sample_id": "b4712ebe-9ecac024",
+          "rank": 11,
+          "uncertainty_proxy": 0.7831942868511478,
+          "no_detections": false,
+          "group_id": "b4712ebe"
+        },
+        {
+          "sample_id": "bcaf73c1-c58fee95",
+          "rank": 12,
+          "uncertainty_proxy": 0.7883702820378589,
+          "no_detections": false,
+          "group_id": "bcaf73c1"
+        }
+      ]
+    }
+  ],
+  "note": "No GT or source scene labels used. Equal IMAGE budget, not measured human cost. Deterministic uncertainty/diverse sets can be identical across seeds; training seeds vary."
+}

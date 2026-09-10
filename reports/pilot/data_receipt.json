@@ -1,0 +1,29 @@
+{
+  "dataset_version": "faff2298d44c5a7801b9c122fb9c3b7d0626b60c146b89fcfefe6c90c22e41df",
+  "source": "dgural/bdd100k",
+  "revision": "c2e7f266756bcd07b87f1a45a35937c8eac20241",
+  "index_sha256": "1e8853904e2926c434557bb90a36b1638ac03ebb77adfc21f04d821a6a998a09",
+  "images": 240,
+  "splits": {
+    "pool": 101,
+    "seed": 44,
+    "test": 59,
+    "dev": 36
+  },
+  "source_split": "upstream validation; locally re-split pilot, NOT official benchmark",
+  "grouping": "conservative filename prefix; route/driver independence unverified",
+  "label_mapping": {
+    "pedestrian": 1,
+    "person": 1,
+    "rider": 1,
+    "bicycle": 2,
+    "bike": 2,
+    "car": 3,
+    "motorcycle": 4,
+    "motor": 4,
+    "bus": 6,
+    "truck": 8,
+    "traffic light": 10
+  },
+  "failed_inputs": 0
+}

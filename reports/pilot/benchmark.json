@@ -1,0 +1,39 @@
+{
+  "ray_version": "2.58.0",
+  "ray_initialization_seconds": 4.391733124999519,
+  "results": [
+    {
+      "engine": "serial",
+      "workers": 1,
+      "images": 240,
+      "seconds": 0.4510588339999231,
+      "images_per_second": 532.0813648004972,
+      "correct": true
+    },
+    {
+      "engine": "ray_data",
+      "workers": 1,
+      "images": 240,
+      "seconds": 1.8060409999998228,
+      "images_per_second": 132.88734862609627,
+      "correct": true
+    },
+    {
+      "engine": "ray_data",
+      "workers": 2,
+      "images": 240,
+      "seconds": 0.5158676249993732,
+      "images_per_second": 465.23563094367785,
+      "correct": true
+    },
+    {
+      "engine": "ray_data",
+      "workers": 4,
+      "images": 240,
+      "seconds": 0.500065000000177,
+      "images_per_second": 479.9376081107757,
+      "correct": true
+    }
+  ],
+  "scope": "Single Apple Silicon host, warm OS file cache, 240 JPEG reads/hash/luminance. One measured pass per setting, not a stable throughput benchmark. Scheduling overhead included, Ray init reported separately. No GPU/multi-node/PB claim."
+}

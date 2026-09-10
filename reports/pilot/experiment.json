@@ -1,0 +1,178 @@
+{
+  "status": "completed",
+  "protocol_sha256": "992b6dc61b8ded41a35e8d47fd52e88c0d11fd88e41e282a44c6f5525c8bb950",
+  "records": [
+    {
+      "name": "random-s17",
+      "strategy": "random",
+      "seed": 17,
+      "selected_images": 12,
+      "train_images": 56,
+      "dev_AP": 0.07442933937266082,
+      "test_AP": 0.0896796564593682,
+      "gate": {
+        "decision": "PASS",
+        "reasons": [],
+        "AP_delta": 0.0049225011629421694,
+        "night_recall_delta": -0.008982035928143714
+      }
+    },
+    {
+      "name": "uncertainty-s17",
+      "strategy": "uncertainty",
+      "seed": 17,
+      "selected_images": 12,
+      "train_images": 56,
+      "dev_AP": 0.07684293452153225,
+      "test_AP": 0.09017382583067443,
+      "gate": {
+        "decision": "PASS",
+        "reasons": [],
+        "AP_delta": 0.005416670534248394,
+        "night_recall_delta": -0.011976047904191614
+      }
+    },
+    {
+      "name": "diverse-s17",
+      "strategy": "diverse",
+      "seed": 17,
+      "selected_images": 12,
+      "train_images": 56,
+      "dev_AP": 0.08429261250006219,
+      "test_AP": 0.09026542070108423,
+      "gate": {
+        "decision": "PASS",
+        "reasons": [],
+        "AP_delta": 0.005508265404658194,
+        "night_recall_delta": -0.011976047904191614
+      }
+    },
+    {
+      "name": "random-s29",
+      "strategy": "random",
+      "seed": 29,
+      "selected_images": 12,
+      "train_images": 56,
+      "dev_AP": 0.07147283964443221,
+      "test_AP": 0.08852670847009843,
+      "gate": {
+        "decision": "PASS",
+        "reasons": [],
+        "AP_delta": 0.003769553173672391,
+        "night_recall_delta": -0.014970059880239528
+      }
+    },
+    {
+      "name": "uncertainty-s29",
+      "strategy": "uncertainty",
+      "seed": 29,
+      "selected_images": 12,
+      "train_images": 56,
+      "dev_AP": 0.07969896538604959,
+      "test_AP": 0.08851125228009021,
+      "gate": {
+        "decision": "PASS",
+        "reasons": [],
+        "AP_delta": 0.0037540969836641763,
+        "night_recall_delta": -0.011976047904191614
+      }
+    },
+    {
+      "name": "diverse-s29",
+      "strategy": "diverse",
+      "seed": 29,
+      "selected_images": 12,
+      "train_images": 56,
+      "dev_AP": 0.07837531570327813,
+      "test_AP": 0.08914063212320736,
+      "gate": {
+        "decision": "PASS",
+        "reasons": [],
+        "AP_delta": 0.004383476826781321,
+        "night_recall_delta": -0.008982035928143714
+      }
+    },
+    {
+      "name": "random-s43",
+      "strategy": "random",
+      "seed": 43,
+      "selected_images": 12,
+      "train_images": 56,
+      "dev_AP": 0.07637530126674384,
+      "test_AP": 0.09308778255232444,
+      "gate": {
+        "decision": "PASS",
+        "reasons": [],
+        "AP_delta": 0.008330627255898407,
+        "night_recall_delta": -0.017964071856287428
+      }
+    },
+    {
+      "name": "uncertainty-s43",
+      "strategy": "uncertainty",
+      "seed": 43,
+      "selected_images": 12,
+      "train_images": 56,
+      "dev_AP": 0.07828010176339216,
+      "test_AP": 0.09020635604504079,
+      "gate": {
+        "decision": "PASS",
+        "reasons": [],
+        "AP_delta": 0.005449200748614755,
+        "night_recall_delta": -0.014970059880239528
+      }
+    },
+    {
+      "name": "diverse-s43",
+      "strategy": "diverse",
+      "seed": 43,
+      "selected_images": 12,
+      "train_images": 56,
+      "dev_AP": 0.07636213840494556,
+      "test_AP": 0.09325164810100361,
+      "gate": {
+        "decision": "PASS",
+        "reasons": [],
+        "AP_delta": 0.008494492804577577,
+        "night_recall_delta": -0.023952095808383228
+      }
+    }
+  ],
+  "aggregates": [
+    {
+      "strategy": "random",
+      "test_AP_mean": 0.09043138249393035,
+      "test_AP_seed_std": 0.002371638298553845,
+      "paired_AP_delta_vs_random": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mean_delta_vs_random": 0.0
+    },
+    {
+      "strategy": "uncertainty",
+      "test_AP_mean": 0.08963047805193514,
+      "test_AP_seed_std": 0.000969414410860027,
+      "paired_AP_delta_vs_random": [
+        0.0004941693713062245,
+        -1.545619000821452e-05,
+        -0.002881426507283652
+      ],
+      "mean_delta_vs_random": -0.000800904441995214
+    },
+    {
+      "strategy": "diverse",
+      "test_AP_mean": 0.09088590030843173,
+      "test_AP_seed_std": 0.0021245845005023007,
+      "paired_AP_delta_vs_random": [
+        0.0005857642417160247,
+        0.0006139236531089304,
+        0.0001638655486791707
+      ],
+      "mean_delta_vs_random": 0.00045451781450137524
+    }
+  ],
+  "baseline_test_AP": 0.08475715529642604,
+  "conclusion_boundary": "Three seeds and a tiny public-data test split are descriptive only. No measured annotation-cost, safety, full-model or production-scale claim."
+}

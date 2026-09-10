@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "python": "3.12.13",
+  "platform": "Darwin arm64",
+  "checks": [
+    {
+      "command": "python -m pytest -q",
+      "exit_code": 0,
+      "stdout": "................................                                         [100%]\n32 passed in 2.12s",
+      "stderr": ""
+    },
+    {
+      "command": "python -m ruff check src tests scripts dashboard.py",
+      "exit_code": 0,
+      "stdout": "All checks passed!",
+      "stderr": ""
+    }
+  ],
+  "reproducibility": "reports/pilot/reproducibility.json",
+  "remote_ci": "configured_not_run",
+  "publication": "local_only"
+}

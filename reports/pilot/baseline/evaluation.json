@@ -1,0 +1,268 @@
+{
+  "run_id": "d75256f87e733b5dec258ef2b6fb36f05b9ed1c970748edfb1581df5e563a7d0",
+  "dataset_version": "faff2298d44c5a7801b9c122fb9c3b7d0626b60c146b89fcfefe6c90c22e41df",
+  "splits": {
+    "dev": {
+      "images": 36,
+      "coco": {
+        "AP": 0.07448832994084051,
+        "AP50": 0.12097548467411327,
+        "AP75": 0.07836750467374155,
+        "AP_small": 0.0007895782367746771,
+        "AP_medium": 0.02723790882468752,
+        "AP_large": 0.4345766756271409,
+        "AR1": 0.07394735164281221,
+        "AR10": 0.10613447957926954,
+        "AR100": 0.1091579250967287,
+        "AR_small": 0.005297325102880658,
+        "AR_medium": 0.05665358888603035,
+        "AR_large": 0.57093567251462
+      },
+      "slices": {
+        "all": {
+          "images": 36,
+          "objects": 621,
+          "tp": 113,
+          "fp": 79,
+          "fn": 508,
+          "recall": 0.1819645732689211,
+          "precision": 0.5885416666666666
+        },
+        "timeofday:daytime": {
+          "images": 27,
+          "objects": 472,
+          "tp": 90,
+          "fp": 66,
+          "fn": 382,
+          "recall": 0.1906779661016949,
+          "precision": 0.5769230769230769
+        },
+        "weather:partly cloudy": {
+          "images": 4,
+          "objects": 69,
+          "tp": 16,
+          "fp": 7,
+          "fn": 53,
+          "recall": 0.2318840579710145,
+          "precision": 0.6956521739130435
+        },
+        "object:small": {
+          "images": 33,
+          "objects": 325,
+          "tp": 2,
+          "fn": 323,
+          "recall": 0.006153846153846154,
+          "precision": null
+        },
+        "object:occluded": {
+          "images": 34,
+          "objects": 374,
+          "tp": 39,
+          "fn": 335,
+          "recall": 0.10427807486631016,
+          "precision": null
+        },
+        "object:person": {
+          "images": 14,
+          "objects": 61,
+          "tp": 0,
+          "fn": 61,
+          "recall": 0.0,
+          "precision": null
+        },
+        "timeofday:night": {
+          "images": 9,
+          "objects": 149,
+          "tp": 23,
+          "fp": 13,
+          "fn": 126,
+          "recall": 0.15436241610738255,
+          "precision": 0.6388888888888888
+        },
+        "weather:clear": {
+          "images": 14,
+          "objects": 254,
+          "tp": 36,
+          "fp": 25,
+          "fn": 218,
+          "recall": 0.14173228346456693,
+          "precision": 0.5901639344262295
+        },
+        "weather:rainy": {
+          "images": 2,
+          "objects": 34,
+          "tp": 7,
+          "fp": 4,
+          "fn": 27,
+          "recall": 0.20588235294117646,
+          "precision": 0.6363636363636364
+        },
+        "weather:snowy": {
+          "images": 5,
+          "objects": 67,
+          "tp": 14,
+          "fp": 8,
+          "fn": 53,
+          "recall": 0.208955223880597,
+          "precision": 0.6363636363636364
+        },
+        "weather:overcast": {
+          "images": 5,
+          "objects": 98,
+          "tp": 19,
+          "fp": 22,
+          "fn": 79,
+          "recall": 0.19387755102040816,
+          "precision": 0.4634146341463415
+        },
+        "weather:undefined": {
+          "images": 6,
+          "objects": 99,
+          "tp": 21,
+          "fp": 13,
+          "fn": 78,
+          "recall": 0.21212121212121213,
+          "precision": 0.6176470588235294
+        }
+      }
+    },
+    "test": {
+      "images": 59,
+      "coco": {
+        "AP": 0.08475715529642604,
+        "AP50": 0.13667901294892595,
+        "AP75": 0.09274712227058422,
+        "AP_small": 0.010026562534085414,
+        "AP_medium": 0.028962583299320284,
+        "AP_large": 0.3446461784363462,
+        "AR1": 0.08210225477071048,
+        "AR10": 0.10218598294621513,
+        "AR100": 0.10371641061321199,
+        "AR_small": 0.012180977368785739,
+        "AR_medium": 0.052558214487148494,
+        "AR_large": 0.40146808510638293
+      },
+      "slices": {
+        "all": {
+          "images": 59,
+          "objects": 752,
+          "tp": 129,
+          "fp": 83,
+          "fn": 623,
+          "recall": 0.17154255319148937,
+          "precision": 0.6084905660377359
+        },
+        "timeofday:night": {
+          "images": 25,
+          "objects": 334,
+          "tp": 40,
+          "fp": 28,
+          "fn": 294,
+          "recall": 0.11976047904191617,
+          "precision": 0.5882352941176471
+        },
+        "weather:clear": {
+          "images": 35,
+          "objects": 470,
+          "tp": 75,
+          "fp": 55,
+          "fn": 395,
+          "recall": 0.1595744680851064,
+          "precision": 0.5769230769230769
+        },
+        "object:small": {
+          "images": 53,
+          "objects": 387,
+          "tp": 4,
+          "fn": 383,
+          "recall": 0.0103359173126615,
+          "precision": null
+        },
+        "object:occluded": {
+          "images": 54,
+          "objects": 415,
+          "tp": 42,
+          "fn": 373,
+          "recall": 0.10120481927710843,
+          "precision": null
+        },
+        "object:person": {
+          "images": 15,
+          "objects": 71,
+          "tp": 11,
+          "fn": 60,
+          "recall": 0.15492957746478872,
+          "precision": null
+        },
+        "timeofday:daytime": {
+          "images": 29,
+          "objects": 352,
+          "tp": 74,
+          "fp": 46,
+          "fn": 278,
+          "recall": 0.21022727272727273,
+          "precision": 0.6166666666666667
+        },
+        "weather:rainy": {
+          "images": 3,
+          "objects": 27,
+          "tp": 8,
+          "fp": 5,
+          "fn": 19,
+          "recall": 0.2962962962962963,
+          "precision": 0.6153846153846154
+        },
+        "weather:overcast": {
+          "images": 3,
+          "objects": 21,
+          "tp": 3,
+          "fp": 4,
+          "fn": 18,
+          "recall": 0.14285714285714285,
+          "precision": 0.42857142857142855
+        },
+        "weather:undefined": {
+          "images": 6,
+          "objects": 59,
+          "tp": 13,
+          "fp": 4,
+          "fn": 46,
+          "recall": 0.22033898305084745,
+          "precision": 0.7647058823529411
+        },
+        "timeofday:dawn/dusk": {
+          "images": 5,
+          "objects": 66,
+          "tp": 15,
+          "fp": 9,
+          "fn": 51,
+          "recall": 0.22727272727272727,
+          "precision": 0.625
+        },
+        "weather:partly cloudy": {
+          "images": 8,
+          "objects": 127,
+          "tp": 25,
+          "fp": 11,
+          "fn": 102,
+          "recall": 0.1968503937007874,
+          "precision": 0.6944444444444444
+        },
+        "weather:snowy": {
+          "images": 4,
+          "objects": 48,
+          "tp": 5,
+          "fp": 4,
+          "fn": 43,
+          "recall": 0.10416666666666667,
+          "precision": 0.5555555555555556
+        }
+      }
+    }
+  },
+  "operating_point": {
+    "score_threshold": 0.5,
+    "iou_threshold": 0.5
+  },
+  "metric_note": "COCO bbox AP on seven mapped classes, not official BDD metric. Small = original-image area < 32^2 pixels. Object slices report recall only. No safety or population-generalization claim."
+}

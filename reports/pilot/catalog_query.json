@@ -1,0 +1,78 @@
+{
+  "engine": "DuckDB",
+  "version": "1.5.5",
+  "rows": [
+    {
+      "split": "dev",
+      "timeofday": "daytime",
+      "images": 27,
+      "mean_luminance": 103.6758375128601
+    },
+    {
+      "split": "dev",
+      "timeofday": "night",
+      "images": 9,
+      "mean_luminance": 29.485918209876544
+    },
+    {
+      "split": "pool",
+      "timeofday": "dawn/dusk",
+      "images": 8,
+      "mean_luminance": 82.67635091145833
+    },
+    {
+      "split": "pool",
+      "timeofday": "daytime",
+      "images": 49,
+      "mean_luminance": 104.04840516935943
+    },
+    {
+      "split": "pool",
+      "timeofday": "night",
+      "images": 44,
+      "mean_luminance": 30.18693280460858
+    },
+    {
+      "split": "seed",
+      "timeofday": "dawn/dusk",
+      "images": 3,
+      "mean_luminance": 81.04477719907406
+    },
+    {
+      "split": "seed",
+      "timeofday": "daytime",
+      "images": 23,
+      "mean_luminance": 102.49907533212561
+    },
+    {
+      "split": "seed",
+      "timeofday": "night",
+      "images": 17,
+      "mean_luminance": 27.192950878267972
+    },
+    {
+      "split": "seed",
+      "timeofday": "undefined",
+      "images": 1,
+      "mean_luminance": 25.04079861111111
+    },
+    {
+      "split": "test",
+      "timeofday": "dawn/dusk",
+      "images": 5,
+      "mean_luminance": 86.64863281250001
+    },
+    {
+      "split": "test",
+      "timeofday": "daytime",
+      "images": 29,
+      "mean_luminance": 104.83552592193486
+    },
+    {
+      "split": "test",
+      "timeofday": "night",
+      "images": 25,
+      "mean_luminance": 28.207387152777784
+    }
+  ]
+}

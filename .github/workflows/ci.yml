@@ -1,0 +1,19 @@
+name: contracts-and-evidence
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          enable-cache: true
+      - run: uv sync --locked --python 3.12 --extra dev --extra dashboard
+      - run: uv run ruff check src tests scripts dashboard.py
+      - run: uv run pytest -q
+      - run: uv run python scripts/verify_artifacts.py
+      # Real image download/training is opt-in and is not falsely labeled as CI coverage.
+
