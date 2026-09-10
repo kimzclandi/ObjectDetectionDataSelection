@@ -1,0 +1,6 @@
+{
+  "images": 240,
+  "cross_split_near_pairs": [],
+  "rule": "256-bit dHash <=8 AND gray MAE<5",
+  "threshold_chosen_before_new_experiment": true
+}

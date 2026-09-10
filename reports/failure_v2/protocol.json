@@ -1,0 +1,82 @@
+{
+  "frozen_utc": "2026-09-10T18:59:54Z",
+  "hypothesis": "Dev images with recoverable low-confidence misses define a feature prototype. Labeling pool images similar to these failures with high low-confidence mass improves fresh-test AP vs random at fixed steps.",
+  "manifest": "d25e2102f468388ec0997b2bcb6ea59c446db64c5c53d2622b1757080405abf2",
+  "diagnosis": "8ad3d7f76ee33a3a3b98e3142c868a32958983734835aa4c2e87c24b7e041d3c",
+  "selections": "c10c48646268c7da693ef7ae81a1e7523addbcf602b4cb016c65cbf01d086c67",
+  "initial_weights": "93a87ed9669cc6b10cac501cfa457d534c03735aa1ec91d719b57045c6db0286",
+  "code": {
+    "src/driving_data/__init__.py": "3bd9726264c050f7918fd600e0856ea57da962fe12349e695540b45753999a85",
+    "src/driving_data/benchmark.py": "e486bcdd953df0c4817412c35a30cab53d372e7ba87e0803a6fd7feb89f01bc2",
+    "src/driving_data/cli.py": "5f060f6dded120df6cd7f80f33bb0f78e1f17a9ed57c2755bc405dac6b1b5ebb",
+    "src/driving_data/common.py": "edd163baa2c91e0ab67e1cc01ffcfc63e3ee077f74ec3a4bb128547b9687784e",
+    "src/driving_data/controls.py": "36c7edeb78703e8424dc14364e11048dc4d4c1c034477e81bbc2cfec4676efe1",
+    "src/driving_data/data.py": "555c70381042ca21a9041357f2be337338c9910ab54d73fb3d6d6578ebff8cd8",
+    "src/driving_data/evaluation.py": "efefda0337d3b3aa2c72024c2695517b0525f138282aa1137d209c1231c879bf",
+    "src/driving_data/failure_loop.py": "ae3f18e3f55ea9f6c3cd287c98bff6a7dd68575cd994966765595c61a6758876",
+    "src/driving_data/model.py": "1319391f9636415c2faa5e7a2deaa981a63a6df3af2056cf9e8c4006c6eba984",
+    "src/driving_data/selection.py": "e01445254c80b14e759db9fe55f2d4a0fdd030402ffa64a60ac82e1a77147317",
+    "src/driving_data/store.py": "6cd2ff2fd962b12edc55015797d72b2623564f69dd49735d166c66619f25e871",
+    "src/driving_data/training.py": "d1663e5947e3537c4af2c8200f40581810ac288e66a73643a18b39cd2a28859a",
+    "src/driving_data/vlm_quality.py": "0b8b0b2d2850bf32d5490ad1beba52b21b1358857041b591daa554f639b769d6"
+  },
+  "config": {
+    "schema_version": 1,
+    "data_limit": 240,
+    "device": "cpu",
+    "warmup_seed": 42,
+    "warmup_epochs": 2,
+    "strategy_seeds": [
+      17,
+      29,
+      43
+    ],
+    "strategies": [
+      "random",
+      "uncertainty",
+      "diverse"
+    ],
+    "budget_images": 12,
+    "candidate_epochs": 2,
+    "learning_rate": 0.005,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "trainable": "roi_heads.box_predictor only; all other parameters and backbone buffers frozen",
+    "score_threshold": 0.5,
+    "iou_threshold": 0.5,
+    "gate": {
+      "max_overall_AP_drop": 0.01,
+      "max_night_recall_drop": 0.05,
+      "minimum_night_images": 20,
+      "minimum_night_objects": 100,
+      "note": "Illustrative offline gate; insufficient night support yields INSUFFICIENT_EVIDENCE, never PASS"
+    }
+  },
+  "seeds": [
+    101,
+    211,
+    307
+  ],
+  "budget_images": 12,
+  "steps": 112,
+  "arms": [
+    "targeted",
+    "random",
+    "seed_only"
+  ],
+  "primary": "mean paired fresh-test COCO AP(targeted-random) across all three seeds",
+  "secondary": "AP(random-seed_only); fixed-baseline low-score-recoverable target recall, complement recall, night/day recall, precision, compute",
+  "selection": "rank cosine(dev failure centroid, pool embedding)*log1p(sum p*(1-p) for .05<=p<.5); seeded sample 12 of top36, one per group; random uniform pool",
+  "training": "44 seed +12 selected images, two shuffled epochs; control 44 seed +12 repeated seed slots; fresh optimizer same LR/momentum, all 112 steps; no early stop/checkpoint selection",
+  "evaluation": "120 fresh unused prefix groups, excluded all 240 old groups, before inference frozen; no evaluations until ALL nine checkpoints complete",
+  "statistics": "Paired prefix-group bootstrap 200 replicates for mean AP difference across seeds; same sampled groups across models/seeds; fixed seed 911204; descriptive, not population safety inference",
+  "decision": "No stable advantage unless primary CI excludes zero positively; report all seeds/slices, no further tuning",
+  "environment": {
+    "torch": "2.14.0",
+    "torchvision": "0.29.0",
+    "numpy": "2.5.3",
+    "Pillow": "12.3.0",
+    "pycocotools": "2.0.11"
+  },
+  "stopping": "One complete comparison; retain failures and stop on corruption; never select best checkpoint/seed"
+}

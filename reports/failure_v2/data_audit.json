@@ -1,0 +1,9 @@
+{
+  "old_manifest": "faff2298d44c5a7801b9c122fb9c3b7d0626b60c146b89fcfefe6c90c22e41df",
+  "new_test": 120,
+  "excluded": [],
+  "rule": "ID-hash ordered unused prefix groups; reject exact bytes or 256-bit dHash distance <=8 AND gray thumbnail MAE<5; no label-driven inclusion",
+  "limitation": "Prefix is not verified route/session. Thumbnail near-duplicate screening is heuristic. Same upstream validation distribution, not external benchmark.",
+  "source_revision": "c2e7f266756bcd07b87f1a45a35937c8eac20241",
+  "index_sha256": "1e8853904e2926c434557bb90a36b1638ac03ebb77adfc21f04d821a6a998a09"
+}
