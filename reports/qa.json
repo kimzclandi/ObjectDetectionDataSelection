@@ -6,7 +6,7 @@
     {
       "command": "python -m pytest -q",
       "exit_code": 0,
-      "stdout": "................................                                         [100%]\n32 passed in 2.12s",
+      "stdout": "........................................                                 [100%]\n40 passed in 1.61s",
       "stderr": ""
     },
     {
@@ -17,6 +17,6 @@
     }
   ],
   "reproducibility": "reports/pilot/reproducibility.json",
-  "remote_ci": "configured_not_run",
-  "publication": "local_only"
+  "remote_ci": "See GitHub Actions for per-commit remote status; this is a local receipt",
+  "publication": "Publication is verified separately from local QA"
 }

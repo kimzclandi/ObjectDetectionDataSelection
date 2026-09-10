@@ -35,8 +35,8 @@ write_json(
         "platform": platform.system() + " " + platform.machine(),
         "checks": checks,
         "reproducibility": "reports/pilot/reproducibility.json",
-        "remote_ci": "configured_not_run",
-        "publication": "local_only",
+        "remote_ci": "See GitHub Actions for per-commit remote status; this is a local receipt",
+        "publication": "Publication is verified separately from local QA",
     },
 )
 files = []
@@ -44,7 +44,10 @@ for folder in ("src", "configs", "tests", "scripts", "docs", "assets", "reports"
     files.extend(
         p
         for p in (ROOT / folder).rglob("*")
-        if p.is_file() and "__pycache__" not in p.parts and "local" not in p.relative_to(ROOT).parts
+        if p.is_file()
+        and "__pycache__" not in p.parts
+        and "local" not in p.relative_to(ROOT).parts
+        and not any(part.endswith(".egg-info") for part in p.parts)
     )
 files.extend(
     ROOT / p
@@ -56,6 +59,7 @@ files.extend(
         "requirements-lock.txt",
         "dashboard.py",
         ".gitignore",
+        ".gitattributes",
     )
 )
 files = [p for p in files if p != ROOT / "reports/artifact_manifest.json"]

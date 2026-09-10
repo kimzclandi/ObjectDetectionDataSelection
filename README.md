@@ -4,11 +4,13 @@
 
 真实道路图像 → 数据契约与去重 → 检测器推理 → 无标签采样 → 检测头微调 → 固定集回归。
 
-本项目为 AI 数据闭环研发岗位准备，重点是可追踪的数据决策、可恢复的处理流程与可复核的实验。代码由 AI 辅助开发；面试时应能独立解释和修改核心实现。
+本项目聚焦数据闭环研发：可追踪的数据决策、可恢复的处理流程与可复核的实验。代码由 AI 辅助开发；面试时应能独立解释和修改核心实现。
 
-**已运行 v0.1：240 张 BDD100K 图像、9 组真实训练对照、单机 Ray Data 处理与故障恢复。未实现真实 VLM 质检、人工标注成本实验或多机/PB 级部署。**
+**已运行：240 张 BDD100K 图像、9 组真实训练对照、3 组匹配步数消融、真实 SmolVLM 场景标签实验、单机 Ray Data 处理与故障恢复。未验证人工标注成本或多机/PB 级部署。**
 
-[实验报告](docs/EXPERIMENT_REPORT.md) · [数据卡](docs/DATA_CARD.md) · [架构与权衡](docs/ARCHITECTURE.md) · [面试手册](docs/INTERVIEW_GUIDE.md) · [原始结果](reports/pilot/experiment.json)
+[![Contracts and evidence](https://github.com/kimzclandi/driving-data-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/kimzclandi/driving-data-engine/actions/workflows/ci.yml)
+
+[实验报告](docs/EXPERIMENT_REPORT.md) · [VLM 质检](docs/VLM_QUALITY.md) · [数据卡](docs/DATA_CARD.md) · [架构与权衡](docs/ARCHITECTURE.md) · [面试手册](docs/INTERVIEW_GUIDE.md) · [JD 证据地图](docs/JD_EVIDENCE.md)
 
 ![实际本地运行界面](assets/dashboard.png)
 
@@ -28,7 +30,7 @@
 
 ## 快速开始
 
-已验证环境：macOS arm64、Python 3.12.13、PyTorch 2.14.0、Torchvision 0.29.0，**全部模型实验实际使用 CPU**。本机有 MPS，但未用于这组实验。依赖由 `uv.lock` 固定；Linux CI 已配置，尚不代表远端运行通过。
+已验证本地环境：macOS arm64、Python 3.12.13、PyTorch 2.14.0、Torchvision 0.29.0，**全部模型实验实际使用 CPU**。本机有 MPS，但未用于这组实验。依赖由 `uv.lock` 固定；远端检查状态以对应提交的 GitHub Actions 为准。
 
 ```bash
 uv sync --locked --python 3.12 --extra dashboard --extra dev --extra distributed
@@ -39,6 +41,14 @@ uv run driving-data verify
 
 # 真实 warmup + 9 组采样/训练/评测；重复运行复用完整训练结果与推理缓存
 uv run driving-data experiment
+
+# 补充消融：相同优化步骤，但不新增图像
+uv run driving-data controls
+
+# 可选：真实本地 VLM，分别验证自由输出和有限标签输出
+uv sync --locked --extra dashboard --extra dev --extra distributed --extra vlm
+uv run driving-data vlm-quality
+uv run driving-data vlm-quality --constrained
 
 # 单机串行 / Ray 1、2、4 worker 正确性与计时
 uv run driving-data benchmark
@@ -98,6 +108,8 @@ flowchart LR
 - [共同基线](reports/pilot/baseline/evaluation.json)：测试 AP 8.476；全量逐样本预测随报告保存。
 - [实际微调记录示例](reports/pilot/diverse-s17/training.json)：输入 ID、标签哈希、优化步数、权重哈希。
 - [对照汇总](reports/pilot/experiment.json)：均值、种子波动、配对差值与每次门禁。
+- [匹配步数消融](reports/pilot/controls.json)：seed-only 8.896 AP，随机新增数据组 9.043 AP；补充对照为后验设计，不能当作独立确认性试验。
+- [真实 VLM 原始输出](reports/pilot/vlm_quality/results.json)：自由输出下 22/36 格式不合规；没有用清洗后的数字掩盖失败。
 - [真实中断恢复](reports/pilot/pretrained/run_receipt.json)：5 缓存命中、1 中断任务恢复、240 个最终结果。
 - [Ray 实测](reports/pilot/benchmark.json)：本次小工作负载的串行处理快于 Ray；不隐藏负收益。
 - [重复训练与推理核验](reports/pilot/reproducibility.json)：见实际检查范围，不能扩大成全平台保证。
@@ -110,8 +122,8 @@ flowchart LR
 4. 等预算指同样新增 12 张图像，不等于同样人工时间或标注框数量；未验证省钱。
 5. 仅映射七个 COCO 类别，`rider` 并入 `person`，忽略 `traffic sign`、`train` 等不在当前范围的类。不是完整驾驶感知模型。
 6. AP 使用保留分数 ≥ 0.05 的预测；运行点召回使用 score ≥ 0.5、IoU ≥ 0.5。小目标以原图面积 < 32² 像素定义。
-7. 与 warmup 比较时还有额外训练步骤的影响；三策略之间步骤相同，但不能把相对 warmup 的全部增益归因于新增数据。
+7. 与 warmup 比较时还有额外训练步骤的影响；已补充三组匹配步数的 seed-only 对照，但它是后验设计、复用了公开测试集。不能把相对 warmup 的全部增益归因于新增数据。
 8. 分布式部分仅运行了单机 Ray Data 图像质检。神经推理为单进程，SQLite 不是多机任务调度器。
+9. SmolVLM 仅做 36 张 dev 图像的昼夜标签实验，参考标签未独立人工裁决；不等于全自动标注，也没有 VLM 训练或降本收益。
 
 代码采用 MIT；数据遵循 [BDD100K 原始条款](docs/BDD100K_LICENSE.rst)，不可用代码许可证覆盖数据许可。数据来源与模型链接见 [数据卡](docs/DATA_CARD.md)。
-

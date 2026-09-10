@@ -1,0 +1,1304 @@
+{
+  "protocol_sha256": "3c4fb6e1b8cc665c5da85db7601461daf9f1a14995be620225bd44cc8022110e",
+  "weight_sha256": "74dea5904032e5ae99a2e0eef5179e6ac0f1dedc3ab0c7c2a5d4d387c843203e",
+  "rows": [
+    {
+      "sample_id": "b43eb946-92f9152d",
+      "sha256": "7d91892110a14c19e0cb126e644df17964f7b8e976672d7e64c00cd5cbbb86cd",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 3.0401801250009157,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "b484aa24-d70cf6e5",
+      "sha256": "369948d2072064f98d5a4adf6d8f537b1670708d294daad4a703872c9d1dd265",
+      "raw_output": "night",
+      "vlm": "night",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9261736250009562,
+      "reference": "night",
+      "rule": "night",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "b5b44d2d-60f87448",
+      "sha256": "26eac8811de0024522aa729823fd075f06157b85a91f6ca4b778c2db8a38ea7d",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9345403750012338,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "b6decb24-82234e11",
+      "sha256": "aa2799da3a3e09512e4899c4c4b28eb9981a910a8557580e3812220850cd6ab6",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9700870830019994,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "b7872bf3-ddf64f77",
+      "sha256": "645766a92f6539201783138d6a7610e0c7eae90b8d835b42d465628564370fb4",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.932027625000046,
+      "reference": "night",
+      "rule": "night",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "ba1f5489-3f8e2762",
+      "sha256": "b02f8c465662043f3162ed3688da29c569df777bad99c33b12bc9c77b8b261d7",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.93807516599918,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "ba7efc39-e3e9eecf",
+      "sha256": "35be8c7c0d540539d51b77e14ed4a4712fc7de698b3830a7b0fb746bb5fbd91e",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9529468750006345,
+      "reference": "night",
+      "rule": "night",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bb1b7e42-9608265e",
+      "sha256": "fea63a5a665d1e7a584007deddfcd8ff20b08ceb489ae49c2200b0bf837420d4",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9725277920006192,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bb34331a-56aba0b3",
+      "sha256": "5088c7a88ebe304d4f1796d013f28b22cc3c839a5752b8ee5c1f60d0fea9b043",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.939836416997423,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bb9071ac-4a15cb23",
+      "sha256": "0a7931893fa1bf7b3b99623f99112db4b53044b18c14d48e0dc6b1b6e891dd37",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9172614160015655,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bc07d865-43cc5bfc",
+      "sha256": "14985aa52c05874e9b2a0e71123930582c4a13c65cf91b237abbe7c84f100fd8",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9540772089967504,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bcade6d5-430ff8e0",
+      "sha256": "b345b8ac44a0f5c40fd8f8c636de6609fc31d1dae628fba9dbe39e481ef52c99",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.935727042000508,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bcde71de-ac5c8c74",
+      "sha256": "75b211d50a8bb70fda9a004862e3eed06df91f98c48520c98f50d75ea573f644",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.931368666002527,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bd31fb8b-28ae6a12",
+      "sha256": "ef67fd26d52202720c9b6e9984866c698855aa7973fa64e8b51f04eccd999d19",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.944615332999092,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "be56ab92-da00e516",
+      "sha256": "c21e35a7469d23bcc12fc5c9f8f05a0168a064688a8bb20f445ac5f3b8602421",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.945832208999491,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "be64f818-053b36ba",
+      "sha256": "f7d1481fb9b995c4b53ffdedd6832ed95e835d0698166ec01964a704ad1e7c61",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.932768416001636,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "be731030-7593da2a",
+      "sha256": "f937bc1e4c32e7b8499a0860afcf6facf850788edf851ba0e7c8dffb49a76121",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9459753340015595,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bf4af26f-12121f1d",
+      "sha256": "98044d04832ff84c2c2db971e68b04d9741f16db63406a38c86c6e2538f8dc6d",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9667345829984697,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bf527384-894c88c6",
+      "sha256": "6207d6347bdf13fa837a3bac2872ec2495155281e0b1db9fe771316552b9c066",
+      "raw_output": "night",
+      "vlm": "night",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.918439125001896,
+      "reference": "night",
+      "rule": "night",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bf77e9b1-33a1b81e",
+      "sha256": "b83bf6f458aa3295b3a4583800a532bf921c0a0a8dfcd5bdaf4930dfb2ab3784",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9338647080003284,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "bfbe2ad2-303c3576",
+      "sha256": "abed8c6af87e94c115135b130781d9c2fb70ecd0da9139385859f63f67660e59",
+      "raw_output": "night",
+      "vlm": "night",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9200684999996156,
+      "reference": "night",
+      "rule": "night",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c0200910-e470c541",
+      "sha256": "fc6603cd12e1e014e2e7cfe5968d3d9bc075defa41ea224e029b8c94e3eb7516",
+      "raw_output": "night",
+      "vlm": "night",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9383661249994475,
+      "reference": "night",
+      "rule": "night",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c05ef84a-2a2e27b2",
+      "sha256": "aaf2790812c3ed391ca3778a9c7439cea5255bcf3b4927f01372b31b61efdc73",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9418372500003898,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c155b6d9-8938e3d3",
+      "sha256": "ac2a6f3e1eb4e20349c08a32f1814738907932c1acada728905f875c38f5e7b2",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.931703042002482,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c19681f6-26f7aa52",
+      "sha256": "9e341bbc9a2ffff1fe5d567035172fb4d721a32068c48230086baff6a18e5544",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9471809589995246,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c28cecbb-11796cf6",
+      "sha256": "08877b6c66030f4c9e5609d5b660acc8ae4520bbd475f21f0322b4235269f2c8",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9519742500015127,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c2bc5a4c-69603eab",
+      "sha256": "0121c3ad1248eaeec56293db80521d76acad3ed6ef4c35edbef0987f85d79e86",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.966067582998221,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c2bc5a4c-c4864ac1",
+      "sha256": "acc84d38ab0a7d1e6904944319e6fd0e14555199068c19cef7a555bd471fdffc",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.929961916997854,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c3b1694b-79c97ac2",
+      "sha256": "054cfab6c8f3f8ff6a0184ac6d7c3bc2ef813155212fcef7f0b4ea308a448897",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.928029083999718,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c447f74e-98ec82f5",
+      "sha256": "7308bce07605434c2e155ee7abd2bb5d0a3de2829ed25f5ee1a00d66935ad063",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9534726249985397,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c48f5464-73d132a1",
+      "sha256": "34859d6b3b0021c49d830ec18452b0c8977f13b2c6ac328a8fed7058636c638b",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9645029999992403,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c5792511-7e5cec42",
+      "sha256": "bd5a1fcb816ce489200ce09106a86e4d2254499ee9f734985ad612bd17deeac8",
+      "raw_output": "night",
+      "vlm": "night",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.9200694160026615,
+      "reference": "night",
+      "rule": "night",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c5eb7f02-4de68c54",
+      "sha256": "ca83136d96fc61f8515fa3d6393b01b5cb6ded1d1432fbfc7611cf606065d962",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.952701040998363,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c65628b7-27006fb6",
+      "sha256": "4b1da1a0d6e083ab121b4212a44c71cf4d2188ce453cc8819162b65c0d113b99",
+      "raw_output": "night",
+      "vlm": "night",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.981782958999247,
+      "reference": "night",
+      "rule": "night",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c9a41ce3-bd04c1ae",
+      "sha256": "5e2c5331794e50b3d2bcdb1f7ce53462bc3d6ebbafb24a04b557657f226230a7",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.970203417000448,
+      "reference": "night",
+      "rule": "night",
+      "majority": "daytime"
+    },
+    {
+      "sample_id": "c9c778b5-772ddc4a",
+      "sha256": "954d5adf06bba84c31ee726843d030a93f6fcb2a0f88dec73ab0a0219b14ec59",
+      "raw_output": "daytime",
+      "vlm": "daytime",
+      "error_type": null,
+      "input_shapes": {
+        "pixel_values": [
+          1,
+          13,
+          3,
+          512,
+          512
+        ],
+        "pixel_attention_mask": [
+          1,
+          13,
+          512,
+          512
+        ],
+        "input_ids": [
+          1,
+          889
+        ],
+        "attention_mask": [
+          1,
+          889
+        ]
+      },
+      "latency_seconds": 2.946415291997255,
+      "reference": "daytime",
+      "rule": "daytime",
+      "majority": "daytime"
+    }
+  ],
+  "metrics": {
+    "majority": {
+      "images": 36,
+      "correct": 27,
+      "accuracy": 0.75,
+      "invalid_outputs": 0,
+      "classes": {
+        "daytime": {
+          "images": 27,
+          "recall": 1.0
+        },
+        "night": {
+          "images": 9,
+          "recall": 0.0
+        }
+      },
+      "balanced_accuracy": 0.5
+    },
+    "rule": {
+      "images": 36,
+      "correct": 36,
+      "accuracy": 1.0,
+      "invalid_outputs": 0,
+      "classes": {
+        "daytime": {
+          "images": 27,
+          "recall": 1.0
+        },
+        "night": {
+          "images": 9,
+          "recall": 1.0
+        }
+      },
+      "balanced_accuracy": 1.0
+    },
+    "vlm": {
+      "images": 36,
+      "correct": 33,
+      "accuracy": 0.9166666666666666,
+      "invalid_outputs": 0,
+      "classes": {
+        "daytime": {
+          "images": 27,
+          "recall": 1.0
+        },
+        "night": {
+          "images": 9,
+          "recall": 0.6666666666666666
+        }
+      },
+      "balanced_accuracy": 0.8333333333333333
+    }
+  },
+  "cache_hits": 0,
+  "seconds_excluding_model_load": 106.26045833399985,
+  "median_inference_seconds": 2.943226291499741,
+  "system_errors": 0,
+  "review_queue": [
+    {
+      "sample_id": "b7872bf3-ddf64f77",
+      "reason": "invalid_or_disagreement",
+      "status": "unreviewed"
+    },
+    {
+      "sample_id": "ba7efc39-e3e9eecf",
+      "reason": "invalid_or_disagreement",
+      "status": "unreviewed"
+    },
+    {
+      "sample_id": "c9a41ce3-bd04c1ae",
+      "reason": "invalid_or_disagreement",
+      "status": "unreviewed"
+    }
+  ]
+}

@@ -45,7 +45,9 @@ for c, label, value in zip(
     ],
 ):
     c.metric(label, value)
-overview, review, sampling, evidence = st.tabs(["实验对照", "失败样本", "数据选择", "追踪与复现"])
+overview, review, sampling, quality, evidence = st.tabs(
+    ["实验对照", "失败样本", "数据选择", "VLM 质检", "追踪与复现"]
+)
 
 with overview:
     st.subheader("同样新增 12 张，哪种选择更有效？")
@@ -74,6 +76,14 @@ with overview:
             for r in experiment["records"]
         ]
         st.dataframe(pd.DataFrame(runs), hide_index=True, width="stretch")
+        if (REPORTS / "controls.json").exists():
+            controls = read_json(REPORTS / "controls.json")
+            st.subheader("补充消融：不加新数据，只匹配训练步数")
+            st.metric("Seed-only 测试 AP", f"{100 * controls['test_AP_mean']:.3f}")
+            st.caption(
+                "44 张独立图像，重复补足到每轮 56 个位置，与候选同为 112 步。后验设计，复用公开测试集，属于探索性证据。"
+            )
+            st.dataframe(pd.DataFrame(controls["records"]), hide_index=True, width="stretch")
     else:
         st.warning("策略实验尚未完成。当前展示已保存的真实数据，不填充示意指标。")
 
@@ -128,6 +138,70 @@ with sampling:
     else:
         st.write("尚未生成采样计划。")
 
+with quality:
+    st.subheader("真实 VLM：道路场景标签能直接交给模型吗？")
+    qpath = REPORTS / "vlm_quality/results.json"
+    if qpath.exists():
+        audit = read_json(qpath)
+        st.write("SmolVLM-256M 在本机读取图像，输出 daytime 或 night；参考标签只在推理后参与比对。")
+        st.dataframe(
+            pd.DataFrame(
+                [
+                    {
+                        "方法": name,
+                        "参考标签一致率": value["accuracy"],
+                        "平衡准确率": value["balanced_accuracy"],
+                        "格式无效数": value["invalid_outputs"],
+                    }
+                    for name, value in audit["metrics"].items()
+                ]
+            ),
+            hide_index=True,
+            width="stretch",
+        )
+        st.warning(
+            "36 张 dev 图像上的标签一致性实验；来源标签未经过独立人工裁决。无效输出保留在分母中，分歧送人工复核，不能称为省标注成本。"
+        )
+        st.dataframe(
+            pd.DataFrame(
+                [
+                    {
+                        k: r[k]
+                        for k in ("sample_id", "raw_output", "vlm", "reference", "rule", "latency_seconds")
+                    }
+                    for r in audit["rows"]
+                ]
+            ),
+            hide_index=True,
+            width="stretch",
+        )
+        constrained_path = REPORTS / "vlm_quality_constrained/results.json"
+        if constrained_path.exists():
+            constrained = read_json(constrained_path)
+            st.subheader("格式约束对照：允许输出标签，并不保证语义正确")
+            st.dataframe(
+                pd.DataFrame(
+                    [
+                        {
+                            "解码方式": "自由生成",
+                            "一致率": audit["metrics"]["vlm"]["accuracy"],
+                            "格式无效": audit["metrics"]["vlm"]["invalid_outputs"],
+                        },
+                        {
+                            "解码方式": "有限标签",
+                            "一致率": constrained["metrics"]["vlm"]["accuracy"],
+                            "格式无效": constrained["metrics"]["vlm"]["invalid_outputs"],
+                        },
+                    ]
+                ),
+                hide_index=True,
+                width="stretch",
+            )
+            st.caption("在 dev 上补充的格式干预；不是训练收益。有限标签版本仍有 3 个语义分歧，进入复核队列。")
+        st.download_button("下载 VLM 原始输出与评测", qpath.read_bytes(), "vlm-quality.json")
+    else:
+        st.info("VLM 实验尚未完成；此处不展示模拟结果。")
+
 with evidence:
     st.subheader("固定版本 · 原始证据 · 可复现命令")
     st.json(receipt, expanded=False)
@@ -138,4 +212,4 @@ with evidence:
     if experiment:
         st.download_button("下载完整实验对照", (REPORTS / "experiment.json").read_bytes(), "experiment.json")
     st.write("可运行：数据接入、真实推理、三策略、真实检测头训练、回归门禁、故障恢复。")
-    st.write("后续：真实 VLM 辅助质检、人工复核成本实验、多机执行、更大规模与路线隔离评测。")
+    st.write("后续：人工复核成本实验、更丰富的 VLM 质检任务、多机执行、更大规模与路线隔离评测。")

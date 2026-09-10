@@ -23,6 +23,9 @@ def main():
     sub.add_parser("experiment")
     sub.add_parser("benchmark")
     sub.add_parser("catalog")
+    sub.add_parser("controls")
+    vlm = sub.add_parser("vlm-quality")
+    vlm.add_argument("--constrained", action="store_true")
     args = p.parse_args()
     if args.command == "prepare":
         from .data import prepare
@@ -52,6 +55,14 @@ def main():
         from .benchmark import benchmark
 
         result = benchmark(args.root)
+    elif args.command == "controls":
+        from .controls import controls
+
+        result = controls(args.root)
+    elif args.command == "vlm-quality":
+        from .vlm_quality import vlm_quality
+
+        result = vlm_quality(args.root, constrained=args.constrained)
     else:
         import duckdb
 

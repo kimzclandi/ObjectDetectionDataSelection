@@ -1,0 +1,46 @@
+{
+  "protocol": {
+    "kind": "post_hoc_followup",
+    "dataset_version": "faff2298d44c5a7801b9c122fb9c3b7d0626b60c146b89fcfefe6c90c22e41df",
+    "pilot_config_sha256": "726528e8c4f18f974c1aa665ea8a38aa7fa048a4802df79f7935ab10f9a35619",
+    "design": "44 unique seed images + 12 deterministic repeated seed slots per epoch; 2 epochs = 112 steps. Same warmup checkpoint, optimizer and three seeds. No pool image or additional label consumed. Designed after viewing pilot results; descriptive ablation on reused public test, not fresh confirmatory evidence."
+  },
+  "records": [
+    {
+      "name": "seed-only-s17",
+      "seed": 17,
+      "unique_images": 44,
+      "new_images": 0,
+      "image_slots_per_epoch": 56,
+      "steps": 112,
+      "test_AP": 0.09045713299454267,
+      "dev_AP": 0.0749763332771426,
+      "random_minus_control_AP": -0.0007774765351744595
+    },
+    {
+      "name": "seed-only-s29",
+      "seed": 29,
+      "unique_images": 44,
+      "new_images": 0,
+      "image_slots_per_epoch": 56,
+      "steps": 112,
+      "test_AP": 0.08695489511427024,
+      "dev_AP": 0.0736523111990322,
+      "random_minus_control_AP": 0.0015718133558281916
+    },
+    {
+      "name": "seed-only-s43",
+      "seed": 43,
+      "unique_images": 44,
+      "new_images": 0,
+      "image_slots_per_epoch": 56,
+      "steps": 112,
+      "test_AP": 0.08947490576302387,
+      "dev_AP": 0.07352580349090979,
+      "random_minus_control_AP": 0.0036128767893005703
+    }
+  ],
+  "test_AP_mean": 0.08896231129061226,
+  "test_AP_seed_std": 0.0018065111021978212,
+  "random_minus_control_AP_mean": 0.0014690712033181008
+}

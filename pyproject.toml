@@ -13,6 +13,7 @@ dependencies = ["torch", "torchvision", "pillow", "numpy", "pandas", "pyarrow", 
 dashboard = ["streamlit"]
 dev = ["pytest", "ruff"]
 distributed = ["ray[data]"]
+vlm = ["transformers>=4.51,<5", "accelerate"]
 
 [project.scripts]
 driving-data = "driving_data.cli:main"

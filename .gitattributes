@@ -1,0 +1,4 @@
+reports/** linguist-generated=true
+uv.lock linguist-generated=true
+requirements-lock.txt linguist-generated=true
+assets/*.png binary
