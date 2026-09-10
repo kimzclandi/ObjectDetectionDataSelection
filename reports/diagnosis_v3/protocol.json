@@ -1,0 +1,53 @@
+{
+  "identity": {
+    "files": {
+      "data/manifest.json": "84d81cac33e6bc056127ecd5e5ded53ee3afa44da388f4c7e85cbc32529ccf58",
+      "reports/pilot/baseline/predictions.json": "81d0a0a32aa2d32b993a1db2b89517610eb8e5fbe65c83fefa952220d8c53a09",
+      "reports/failure_v2/dev_diagnosis.json": "44f0ea09f194c227b739dba00a3280acd573d174b9e442cccd03fce0b9e08419",
+      "reports/failure_v2/selections.json": "c10c48646268c7da693ef7ae81a1e7523addbcf602b4cb016c65cbf01d086c67",
+      "src/driving_data/evaluation.py": "efefda0337d3b3aa2c72024c2695517b0525f138282aa1137d209c1231c879bf",
+      "scripts/diagnose_failure_v3.py": "b61ed90084e364e5402d12d09ac9e99077bc6689adc883a23ec5244ecdfa75ff"
+    },
+    "dev_labels": {
+      "b43eb946-92f9152d": "80fee86d4ba05bc446337eb32164b43f8972748229f1f0e27953ef54ebcad4c6",
+      "b484aa24-d70cf6e5": "bc909cd27183844071d439de42b46824daf9d1ec69db7dfabb4126f3e2a894ba",
+      "b5b44d2d-60f87448": "93c8bb5f1a6afbf91b2b37619b17301ba3d9da7897c3c01b04cf1aed6839e2ac",
+      "b6decb24-82234e11": "aa57d30ed5402f5bc9550c30e569c1b547d742656088da51b131ab8e635fcf42",
+      "b7872bf3-ddf64f77": "3a56f177b82450594ad4913f921f0d7201367eb77d9b73624d0252042eab41c5",
+      "ba1f5489-3f8e2762": "62899be9192ea105d631075962913c3bbc038fc72e179fb624c04fef9f0268e8",
+      "ba7efc39-e3e9eecf": "87bbcb96e023d42924eccbb02823cee93335a9accec8fd7ab2458bc787048e84",
+      "bb1b7e42-9608265e": "e1216538edd65de5c22db8208263d165610481679c7ee2b727f3b85dc85477db",
+      "bb34331a-56aba0b3": "de68995c8de4e2ebc31fd4b180e6963ef4f8bc546593312e4f58f8e245be8ad9",
+      "bb9071ac-4a15cb23": "a3f8bf82a4b1f88fe6a98ee260d8c43ee056c8adadb842a984cb9d625cde2e6d",
+      "bc07d865-43cc5bfc": "84d245e5d5e97c61c7489575c38df879ff310e8647c784b7434b58a4ef141a00",
+      "bcade6d5-430ff8e0": "4f71f00e2caef7e09735bcb0892f1257588d8a8fa3f4410a5690bcede29d7c31",
+      "bcde71de-ac5c8c74": "de9fb362636704f3995b39231ff909d64e21854c719d74a1cba889603517c707",
+      "bd31fb8b-28ae6a12": "8bbd15c4c7daac59c3031797d72d50dd6087617db378b974c88363872bd3b870",
+      "be56ab92-da00e516": "8ca84cf58b2c6ac9e346837cb3da5e57ab3d268322956110cb9c3a2264cc28e5",
+      "be64f818-053b36ba": "942f614446d6793ae94e7c1065b25937118c20d1e6b7732c921079cd091ece0e",
+      "be731030-7593da2a": "d719d6a8544d1c5d2e925f763f6119fd1c579c77acc760ae2cf1b8883bd1bf81",
+      "bf4af26f-12121f1d": "45fd2da5d65c4c791f1966fff2133abb57480613b2cbe7127d113c5c00a081ec",
+      "bf527384-894c88c6": "d32911f9f9aedbbf7e499ceeddf829bbb7b57c5187f1519e33a5cebcc91117b4",
+      "bf77e9b1-33a1b81e": "103eb5875d79d004f31b5b30dd3465424d3129d49ba10c47a76cf8b57ea5c7c0",
+      "bfbe2ad2-303c3576": "6aaa7ad73746518f70613b06d0bd96e164408b56301b26f4204e219d935a9855",
+      "c0200910-e470c541": "490ac313840d76246b4a7b8b8696b2c77ff20b9c6c39e07ffa9e4e509943ebe9",
+      "c05ef84a-2a2e27b2": "e56a1a753181add06b351e36b39eef7dcadc7258f9146fa15b0747d26d4c559b",
+      "c155b6d9-8938e3d3": "437f61db0ca2d6d264e751d7a7854fe99c2e04805a13a27310840f42cd61a583",
+      "c19681f6-26f7aa52": "5b00604381504ecb65e050c0ef5861b5a3cdb1c40c64550ab61855c0f08a7872",
+      "c28cecbb-11796cf6": "e2b3c5a1e25c686995fd01d29255d5e028c68811eaf990f51a39f1b9f81eb11c",
+      "c2bc5a4c-69603eab": "d5d522600de8a83037ac5716853a76ba6462c660a275bb3733ec275dd5aa9a4a",
+      "c2bc5a4c-c4864ac1": "bf7951f2f77914cafde0e779ee83c53b985b109c1ba1ac890b693914a3585308",
+      "c3b1694b-79c97ac2": "38b0afce76e18a23db6118501390fc3b0d7d6e9c0f8acc0c3a4d8824a14dbb70",
+      "c447f74e-98ec82f5": "79d6ebfba27a3b83c11b23f1d186e7ad7579a4517f1aacf445bb7302704c77c5",
+      "c48f5464-73d132a1": "052edbe58e080eda859b3bf6999b75fafe315e8bac6ceb6654d32bee8c022a44",
+      "c5792511-7e5cec42": "d2ec8896e1c4735baf49d3882e1b115c8ca184ab92e3e938054e43460510cdd6",
+      "c5eb7f02-4de68c54": "06f35c15e3786d195ba3f72ec407fbd14936f061e607ec197815937d84b3318d",
+      "c65628b7-27006fb6": "706b66edad603247d1e137e788b5e7597e3023eaef1ed7302400ee58a0b44e23",
+      "c9a41ce3-bd04c1ae": "14ecfb733fb2bdc716ac4b2ef30eb5a54fc178e1dc9cc3ef60fbf003f3974e66",
+      "c9c778b5-772ddc4a": "21e4c9e370effd6f0412412b1dfe09a41455cdbcb66b8a5da0963ae76f45c2af"
+    }
+  },
+  "design": "One exploratory decomposition. Pool: full/mass/similarity/count Spearman and top36 overlap. Dev: group-excluded failure centroid AUC, low-score matching FP fraction and residual misses. No threshold search, test labels or retraining.",
+  "statistical_unit": "development image/group; descriptive finite sample; no significance claim",
+  "decision": "Use mechanism diagnostics to decide whether a future separately frozen confirmation is warranted; do not retrofit v2."
+}
