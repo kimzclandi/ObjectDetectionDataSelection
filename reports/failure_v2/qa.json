@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-10T19:17:40.191393+00:00",
+  "status": "passed",
+  "tests": 44,
+  "test_output": "............................................                             [100%]\n44 passed in 1.87s",
+  "metrics_recomputed": true,
+  "idempotency": {
+    "status": "passed",
+    "unchanged_files": 1228,
+    "new_training_steps": 0,
+    "new_inferences": 0,
+    "method": "Reran complete frozen pipeline; every preexisting result JSON byte hash unchanged"
+  },
+  "dashboard": "Actual local Streamlit viewed in browser; saved screenshot in assets; exercised new track and filters in AppTest",
+  "ci_boundary": "CI checks contracts and saved evidence; real inference/training performed locally",
+  "historical_experiment_directories_unchanged": true,
+  "actual_training_resume": {
+    "status": "passed",
+    "state_tensors": 330,
+    "all_final_tensors_bitwise_equal": true,
+    "all_112_losses_equal": true,
+    "interrupted_at_step": 14,
+    "resumed_count": 1,
+    "replay_seconds": 17.882382458999928,
+    "scope": "One CPU seed/run; clean stop after durable optimizer and torch RNG checkpoint. No cross-platform guarantee."
+  }
+}

@@ -1,0 +1,3057 @@
+{
+  "coco": {
+    "AP": 0.099578475792411,
+    "AP50": 0.18108234841461218,
+    "AP75": 0.13155486161292398,
+    "AP_small": 0.0006035851543521713,
+    "AP_medium": 0.07834870149835915,
+    "AP_large": 0.3174901532445728,
+    "AR1": 0.0982259562293666,
+    "AR10": 0.1261097366087949,
+    "AR100": 0.13223627459606604,
+    "AR_small": 0.004890515331856636,
+    "AR_medium": 0.11328284797694403,
+    "AR_large": 0.4297577996715928
+  },
+  "slices": {
+    "target": {
+      "objects": 166,
+      "tp": 5,
+      "recall": 0.030120481927710843
+    },
+    "complement": {
+      "objects": 1639,
+      "tp": 327,
+      "recall": 0.19951189749847467
+    },
+    "all": {
+      "objects": 1805,
+      "tp": 332,
+      "recall": 0.18393351800554017
+    },
+    "time:daytime": {
+      "objects": 1225,
+      "tp": 228,
+      "recall": 0.18612244897959185
+    },
+    "time:night": {
+      "objects": 405,
+      "tp": 64,
+      "recall": 0.1580246913580247
+    },
+    "time:dawn/dusk": {
+      "objects": 169,
+      "tp": 37,
+      "recall": 0.21893491124260356
+    },
+    "time:undefined": {
+      "objects": 6,
+      "tp": 3,
+      "recall": 0.5
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "c2e294a9-93e364f0",
+      "group_id": "c2e294a9",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 15,
+          "tp": 6
+        },
+        "all": {
+          "objects": 18,
+          "tp": 6
+        },
+        "time:daytime": {
+          "objects": 18,
+          "tp": 6
+        }
+      },
+      "tp": 6,
+      "fp": 1,
+      "fn": 12
+    },
+    {
+      "sample_id": "c38bdba6-2abed256",
+      "group_id": "c38bdba6",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 8,
+          "tp": 1
+        },
+        "all": {
+          "objects": 10,
+          "tp": 1
+        },
+        "time:daytime": {
+          "objects": 10,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 2,
+      "fn": 9
+    },
+    {
+      "sample_id": "bc7bc1e5-2c8a6abe",
+      "group_id": "bc7bc1e5",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 10,
+          "tp": 5
+        },
+        "all": {
+          "objects": 11,
+          "tp": 5
+        },
+        "time:daytime": {
+          "objects": 11,
+          "tp": 5
+        }
+      },
+      "tp": 5,
+      "fp": 0,
+      "fn": 6
+    },
+    {
+      "sample_id": "b98f4bb1-100931bb",
+      "group_id": "b98f4bb1",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 13,
+          "tp": 3
+        },
+        "all": {
+          "objects": 16,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 16,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 1,
+      "fn": 13
+    },
+    {
+      "sample_id": "b9d11a21-9cc4a8bb",
+      "group_id": "b9d11a21",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 3,
+          "tp": 0
+        },
+        "all": {
+          "objects": 4,
+          "tp": 0
+        },
+        "time:night": {
+          "objects": 4,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 1,
+      "fn": 4
+    },
+    {
+      "sample_id": "c16c2f49-366525d8",
+      "group_id": "c16c2f49",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 1
+        },
+        "complement": {
+          "objects": 21,
+          "tp": 5
+        },
+        "all": {
+          "objects": 22,
+          "tp": 6
+        },
+        "time:daytime": {
+          "objects": 22,
+          "tp": 6
+        }
+      },
+      "tp": 6,
+      "fp": 2,
+      "fn": 16
+    },
+    {
+      "sample_id": "bd937f4d-6c06e8b4",
+      "group_id": "bd937f4d",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 6,
+          "tp": 2
+        },
+        "all": {
+          "objects": 6,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 6,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 2,
+      "fn": 4
+    },
+    {
+      "sample_id": "c359e7b1-5b68aea4",
+      "group_id": "c359e7b1",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 10,
+          "tp": 4
+        },
+        "all": {
+          "objects": 13,
+          "tp": 4
+        },
+        "time:dawn/dusk": {
+          "objects": 13,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 2,
+      "fn": 9
+    },
+    {
+      "sample_id": "c71fcdc8-62a7fa51",
+      "group_id": "c71fcdc8",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 36,
+          "tp": 1
+        },
+        "all": {
+          "objects": 39,
+          "tp": 1
+        },
+        "time:daytime": {
+          "objects": 39,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 0,
+      "fn": 38
+    },
+    {
+      "sample_id": "c63428f4-7e084bea",
+      "group_id": "c63428f4",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 12,
+          "tp": 2
+        },
+        "all": {
+          "objects": 12,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 12,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 0,
+      "fn": 10
+    },
+    {
+      "sample_id": "c1862df8-21ee7c12",
+      "group_id": "c1862df8",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 24,
+          "tp": 3
+        },
+        "all": {
+          "objects": 25,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 25,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 0,
+      "fn": 22
+    },
+    {
+      "sample_id": "bcfc54ad-c713893a",
+      "group_id": "bcfc54ad",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 14,
+          "tp": 4
+        },
+        "all": {
+          "objects": 17,
+          "tp": 4
+        },
+        "time:night": {
+          "objects": 17,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 0,
+      "fn": 13
+    },
+    {
+      "sample_id": "c62664f1-b6fec7e5",
+      "group_id": "c62664f1",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 31,
+          "tp": 4
+        },
+        "all": {
+          "objects": 34,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 34,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 2,
+      "fn": 30
+    },
+    {
+      "sample_id": "b2a9d547-f7f6fa92",
+      "group_id": "b2a9d547",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 5,
+          "tp": 0
+        },
+        "all": {
+          "objects": 6,
+          "tp": 0
+        },
+        "time:night": {
+          "objects": 6,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 2,
+      "fn": 6
+    },
+    {
+      "sample_id": "b501bb52-aab37014",
+      "group_id": "b501bb52",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 4,
+          "tp": 1
+        },
+        "all": {
+          "objects": 4,
+          "tp": 1
+        },
+        "time:daytime": {
+          "objects": 4,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 0,
+      "fn": 3
+    },
+    {
+      "sample_id": "b901a3e5-7ca95a7c",
+      "group_id": "b901a3e5",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 10,
+          "tp": 2
+        },
+        "all": {
+          "objects": 10,
+          "tp": 2
+        },
+        "time:dawn/dusk": {
+          "objects": 10,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 0,
+      "fn": 8
+    },
+    {
+      "sample_id": "b44a71bf-712b4538",
+      "group_id": "b44a71bf",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 38,
+          "tp": 4
+        },
+        "all": {
+          "objects": 41,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 41,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 1,
+      "fn": 37
+    },
+    {
+      "sample_id": "b610c819-6f782f77",
+      "group_id": "b610c819",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 31,
+          "tp": 4
+        },
+        "all": {
+          "objects": 32,
+          "tp": 4
+        },
+        "time:dawn/dusk": {
+          "objects": 32,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 0,
+      "fn": 28
+    },
+    {
+      "sample_id": "c5796880-a7005e6e",
+      "group_id": "c5796880",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 7,
+          "tp": 3
+        },
+        "all": {
+          "objects": 9,
+          "tp": 3
+        },
+        "time:night": {
+          "objects": 9,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 2,
+      "fn": 6
+    },
+    {
+      "sample_id": "c85d1e8c-8013a9d3",
+      "group_id": "c85d1e8c",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 9,
+          "tp": 1
+        },
+        "all": {
+          "objects": 9,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 9,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 1,
+      "fn": 8
+    },
+    {
+      "sample_id": "bed001a8-6cd3d8be",
+      "group_id": "bed001a8",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 9,
+          "tp": 3
+        },
+        "all": {
+          "objects": 9,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 9,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 2,
+      "fn": 6
+    },
+    {
+      "sample_id": "c4542f68-d3221fd3",
+      "group_id": "c4542f68",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 12,
+          "tp": 3
+        },
+        "all": {
+          "objects": 14,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 14,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 1,
+      "fn": 11
+    },
+    {
+      "sample_id": "bbb28508-c109f395",
+      "group_id": "bbb28508",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 15,
+          "tp": 1
+        },
+        "all": {
+          "objects": 17,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 17,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 2,
+      "fn": 16
+    },
+    {
+      "sample_id": "c1d2a1ff-3fe5e395",
+      "group_id": "c1d2a1ff",
+      "slices": {
+        "target": {
+          "objects": 4,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 7,
+          "tp": 1
+        },
+        "all": {
+          "objects": 11,
+          "tp": 1
+        },
+        "time:daytime": {
+          "objects": 11,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 2,
+      "fn": 10
+    },
+    {
+      "sample_id": "bb94c68a-4e6236bc",
+      "group_id": "bb94c68a",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 16,
+          "tp": 4
+        },
+        "all": {
+          "objects": 19,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 19,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 1,
+      "fn": 15
+    },
+    {
+      "sample_id": "bb848f84-44cbc584",
+      "group_id": "bb848f84",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 8,
+          "tp": 1
+        },
+        "all": {
+          "objects": 9,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 9,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 0,
+      "fn": 8
+    },
+    {
+      "sample_id": "b1d0091f-75824d0d",
+      "group_id": "b1d0091f",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 11,
+          "tp": 3
+        },
+        "all": {
+          "objects": 11,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 11,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 0,
+      "fn": 8
+    },
+    {
+      "sample_id": "ba3878a5-a6be090b",
+      "group_id": "ba3878a5",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 24,
+          "tp": 7
+        },
+        "all": {
+          "objects": 24,
+          "tp": 7
+        },
+        "time:daytime": {
+          "objects": 24,
+          "tp": 7
+        }
+      },
+      "tp": 7,
+      "fp": 1,
+      "fn": 17
+    },
+    {
+      "sample_id": "b93a8e92-e5a0589d",
+      "group_id": "b93a8e92",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 7,
+          "tp": 7
+        },
+        "all": {
+          "objects": 7,
+          "tp": 7
+        },
+        "time:daytime": {
+          "objects": 7,
+          "tp": 7
+        }
+      },
+      "tp": 7,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "sample_id": "ba4432a9-9df2cbad",
+      "group_id": "ba4432a9",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 28,
+          "tp": 5
+        },
+        "all": {
+          "objects": 30,
+          "tp": 5
+        },
+        "time:daytime": {
+          "objects": 30,
+          "tp": 5
+        }
+      },
+      "tp": 5,
+      "fp": 1,
+      "fn": 25
+    },
+    {
+      "sample_id": "c0b4f0df-586ab062",
+      "group_id": "c0b4f0df",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 19,
+          "tp": 1
+        },
+        "all": {
+          "objects": 22,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 22,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 1,
+      "fn": 21
+    },
+    {
+      "sample_id": "b757f147-6a20b38f",
+      "group_id": "b757f147",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 17,
+          "tp": 5
+        },
+        "all": {
+          "objects": 18,
+          "tp": 5
+        },
+        "time:dawn/dusk": {
+          "objects": 18,
+          "tp": 5
+        }
+      },
+      "tp": 5,
+      "fp": 2,
+      "fn": 13
+    },
+    {
+      "sample_id": "b6579e76-e88b3d6d",
+      "group_id": "b6579e76",
+      "slices": {
+        "target": {
+          "objects": 6,
+          "tp": 1
+        },
+        "complement": {
+          "objects": 23,
+          "tp": 1
+        },
+        "all": {
+          "objects": 29,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 29,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 2,
+      "fn": 27
+    },
+    {
+      "sample_id": "bcbe3164-1af2bcb3",
+      "group_id": "bcbe3164",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 21,
+          "tp": 3
+        },
+        "all": {
+          "objects": 22,
+          "tp": 3
+        },
+        "time:dawn/dusk": {
+          "objects": 22,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 1,
+      "fn": 19
+    },
+    {
+      "sample_id": "b68a000f-9a8091f9",
+      "group_id": "b68a000f",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 14,
+          "tp": 1
+        },
+        "all": {
+          "objects": 15,
+          "tp": 1
+        },
+        "time:daytime": {
+          "objects": 15,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 1,
+      "fn": 14
+    },
+    {
+      "sample_id": "b5dec5e7-5d59cc3b",
+      "group_id": "b5dec5e7",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 11,
+          "tp": 1
+        },
+        "all": {
+          "objects": 14,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 14,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 1,
+      "fn": 13
+    },
+    {
+      "sample_id": "c796ff16-6fed522b",
+      "group_id": "c796ff16",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 14,
+          "tp": 4
+        },
+        "all": {
+          "objects": 15,
+          "tp": 4
+        },
+        "time:night": {
+          "objects": 15,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 1,
+      "fn": 11
+    },
+    {
+      "sample_id": "bbf7e280-e5ccb014",
+      "group_id": "bbf7e280",
+      "slices": {
+        "target": {
+          "objects": 4,
+          "tp": 1
+        },
+        "complement": {
+          "objects": 15,
+          "tp": 4
+        },
+        "all": {
+          "objects": 19,
+          "tp": 5
+        },
+        "time:daytime": {
+          "objects": 19,
+          "tp": 5
+        }
+      },
+      "tp": 5,
+      "fp": 1,
+      "fn": 14
+    },
+    {
+      "sample_id": "b7301a4a-b25a846a",
+      "group_id": "b7301a4a",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 15,
+          "tp": 1
+        },
+        "all": {
+          "objects": 16,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 16,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 2,
+      "fn": 15
+    },
+    {
+      "sample_id": "b4b07c88-3e6d65a0",
+      "group_id": "b4b07c88",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 12,
+          "tp": 2
+        },
+        "all": {
+          "objects": 13,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 13,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 0,
+      "fn": 11
+    },
+    {
+      "sample_id": "b71d7574-015d9d5d",
+      "group_id": "b71d7574",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 14,
+          "tp": 4
+        },
+        "all": {
+          "objects": 14,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 14,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 1,
+      "fn": 10
+    },
+    {
+      "sample_id": "c91a84db-a199dd0d",
+      "group_id": "c91a84db",
+      "slices": {
+        "target": {
+          "objects": 4,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 24,
+          "tp": 5
+        },
+        "all": {
+          "objects": 28,
+          "tp": 5
+        },
+        "time:daytime": {
+          "objects": 28,
+          "tp": 5
+        }
+      },
+      "tp": 5,
+      "fp": 2,
+      "fn": 23
+    },
+    {
+      "sample_id": "bac8fe51-6b258bd9",
+      "group_id": "bac8fe51",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 12,
+          "tp": 2
+        },
+        "all": {
+          "objects": 14,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 14,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 1,
+      "fn": 12
+    },
+    {
+      "sample_id": "bab97280-a3c6a37c",
+      "group_id": "bab97280",
+      "slices": {
+        "target": {
+          "objects": 5,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 34,
+          "tp": 8
+        },
+        "all": {
+          "objects": 39,
+          "tp": 8
+        },
+        "time:daytime": {
+          "objects": 39,
+          "tp": 8
+        }
+      },
+      "tp": 8,
+      "fp": 2,
+      "fn": 31
+    },
+    {
+      "sample_id": "c9b29647-95da8336",
+      "group_id": "c9b29647",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 9,
+          "tp": 0
+        },
+        "all": {
+          "objects": 10,
+          "tp": 0
+        },
+        "time:daytime": {
+          "objects": 10,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 0,
+      "fn": 10
+    },
+    {
+      "sample_id": "c65d48bf-dd2e932b",
+      "group_id": "c65d48bf",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 5,
+          "tp": 1
+        },
+        "all": {
+          "objects": 6,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 6,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 0,
+      "fn": 5
+    },
+    {
+      "sample_id": "c62ba5b8-9119eae7",
+      "group_id": "c62ba5b8",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 22,
+          "tp": 4
+        },
+        "all": {
+          "objects": 22,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 22,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 1,
+      "fn": 18
+    },
+    {
+      "sample_id": "b6bd79c8-c94f5c10",
+      "group_id": "b6bd79c8",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 6,
+          "tp": 3
+        },
+        "all": {
+          "objects": 6,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 6,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 2,
+      "fn": 3
+    },
+    {
+      "sample_id": "c0f7c2d3-1abf98ec",
+      "group_id": "c0f7c2d3",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 10,
+          "tp": 0
+        },
+        "all": {
+          "objects": 10,
+          "tp": 0
+        },
+        "time:daytime": {
+          "objects": 10,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 0,
+      "fn": 10
+    },
+    {
+      "sample_id": "b8697036-9589cddf",
+      "group_id": "b8697036",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 24,
+          "tp": 6
+        },
+        "all": {
+          "objects": 27,
+          "tp": 6
+        },
+        "time:daytime": {
+          "objects": 27,
+          "tp": 6
+        }
+      },
+      "tp": 6,
+      "fp": 1,
+      "fn": 21
+    },
+    {
+      "sample_id": "b6a0a684-b46f896b",
+      "group_id": "b6a0a684",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 9,
+          "tp": 2
+        },
+        "all": {
+          "objects": 10,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 10,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 0,
+      "fn": 8
+    },
+    {
+      "sample_id": "bafad57f-2e29ac87",
+      "group_id": "bafad57f",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 12,
+          "tp": 2
+        },
+        "all": {
+          "objects": 12,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 12,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 1,
+      "fn": 10
+    },
+    {
+      "sample_id": "b1e62c91-eca210a9",
+      "group_id": "b1e62c91",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 18,
+          "tp": 3
+        },
+        "all": {
+          "objects": 20,
+          "tp": 3
+        },
+        "time:night": {
+          "objects": 20,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 1,
+      "fn": 17
+    },
+    {
+      "sample_id": "c7a350a0-cbbae3f7",
+      "group_id": "c7a350a0",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 15,
+          "tp": 6
+        },
+        "all": {
+          "objects": 16,
+          "tp": 6
+        },
+        "time:daytime": {
+          "objects": 16,
+          "tp": 6
+        }
+      },
+      "tp": 6,
+      "fp": 0,
+      "fn": 10
+    },
+    {
+      "sample_id": "c6dfb2b8-a74025b0",
+      "group_id": "c6dfb2b8",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 4,
+          "tp": 2
+        },
+        "all": {
+          "objects": 6,
+          "tp": 2
+        },
+        "time:night": {
+          "objects": 6,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 0,
+      "fn": 4
+    },
+    {
+      "sample_id": "b3e74777-122e3878",
+      "group_id": "b3e74777",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 8,
+          "tp": 2
+        },
+        "all": {
+          "objects": 9,
+          "tp": 2
+        },
+        "time:night": {
+          "objects": 9,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 3,
+      "fn": 7
+    },
+    {
+      "sample_id": "b586b979-c563c3e2",
+      "group_id": "b586b979",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 18,
+          "tp": 3
+        },
+        "all": {
+          "objects": 21,
+          "tp": 3
+        },
+        "time:night": {
+          "objects": 21,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 2,
+      "fn": 18
+    },
+    {
+      "sample_id": "be67f423-8aec9ba5",
+      "group_id": "be67f423",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 1
+        },
+        "complement": {
+          "objects": 17,
+          "tp": 8
+        },
+        "all": {
+          "objects": 18,
+          "tp": 9
+        },
+        "time:daytime": {
+          "objects": 18,
+          "tp": 9
+        }
+      },
+      "tp": 9,
+      "fp": 2,
+      "fn": 9
+    },
+    {
+      "sample_id": "b7bd8b85-9f43d43e",
+      "group_id": "b7bd8b85",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 6,
+          "tp": 1
+        },
+        "all": {
+          "objects": 6,
+          "tp": 1
+        },
+        "time:dawn/dusk": {
+          "objects": 6,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 1,
+      "fn": 5
+    },
+    {
+      "sample_id": "c91da210-bc038b99",
+      "group_id": "c91da210",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 0,
+          "tp": 0
+        },
+        "all": {
+          "objects": 0,
+          "tp": 0
+        },
+        "time:daytime": {
+          "objects": 0,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 1,
+      "fn": 0
+    },
+    {
+      "sample_id": "bd0db9ed-cdca9422",
+      "group_id": "bd0db9ed",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 14,
+          "tp": 6
+        },
+        "all": {
+          "objects": 17,
+          "tp": 6
+        },
+        "time:night": {
+          "objects": 17,
+          "tp": 6
+        }
+      },
+      "tp": 6,
+      "fp": 1,
+      "fn": 11
+    },
+    {
+      "sample_id": "c3cd6c82-b5d52beb",
+      "group_id": "c3cd6c82",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 20,
+          "tp": 1
+        },
+        "all": {
+          "objects": 20,
+          "tp": 1
+        },
+        "time:daytime": {
+          "objects": 20,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 2,
+      "fn": 19
+    },
+    {
+      "sample_id": "c330c787-0f40c0b6",
+      "group_id": "c330c787",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 10,
+          "tp": 4
+        },
+        "all": {
+          "objects": 10,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 10,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 2,
+      "fn": 6
+    },
+    {
+      "sample_id": "b888e048-8018b284",
+      "group_id": "b888e048",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 25,
+          "tp": 2
+        },
+        "all": {
+          "objects": 26,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 26,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 1,
+      "fn": 24
+    },
+    {
+      "sample_id": "c178a6d6-0f03f247",
+      "group_id": "c178a6d6",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 5,
+          "tp": 0
+        },
+        "all": {
+          "objects": 5,
+          "tp": 0
+        },
+        "time:night": {
+          "objects": 5,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 0,
+      "fn": 5
+    },
+    {
+      "sample_id": "c1f35f18-b529c043",
+      "group_id": "c1f35f18",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 19,
+          "tp": 6
+        },
+        "all": {
+          "objects": 20,
+          "tp": 6
+        },
+        "time:dawn/dusk": {
+          "objects": 20,
+          "tp": 6
+        }
+      },
+      "tp": 6,
+      "fp": 2,
+      "fn": 14
+    },
+    {
+      "sample_id": "bb110f9d-f9e57c74",
+      "group_id": "bb110f9d",
+      "slices": {
+        "target": {
+          "objects": 5,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 22,
+          "tp": 3
+        },
+        "all": {
+          "objects": 27,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 27,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 3,
+      "fn": 24
+    },
+    {
+      "sample_id": "bcbfbfb8-297deca0",
+      "group_id": "bcbfbfb8",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 15,
+          "tp": 1
+        },
+        "all": {
+          "objects": 15,
+          "tp": 1
+        },
+        "time:daytime": {
+          "objects": 15,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 1,
+      "fn": 14
+    },
+    {
+      "sample_id": "b5fc1373-94aaab40",
+      "group_id": "b5fc1373",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 15,
+          "tp": 2
+        },
+        "all": {
+          "objects": 15,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 15,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 2,
+      "fn": 13
+    },
+    {
+      "sample_id": "b7a9b166-176e18ae",
+      "group_id": "b7a9b166",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 9,
+          "tp": 4
+        },
+        "all": {
+          "objects": 10,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 10,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 0,
+      "fn": 6
+    },
+    {
+      "sample_id": "bdb56045-67e52488",
+      "group_id": "bdb56045",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 3,
+          "tp": 1
+        },
+        "all": {
+          "objects": 3,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 3,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 0,
+      "fn": 2
+    },
+    {
+      "sample_id": "c6da617f-f5c8afd5",
+      "group_id": "c6da617f",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 17,
+          "tp": 2
+        },
+        "all": {
+          "objects": 19,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 19,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 1,
+      "fn": 17
+    },
+    {
+      "sample_id": "c264943c-5e493c9f",
+      "group_id": "c264943c",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 29,
+          "tp": 5
+        },
+        "all": {
+          "objects": 30,
+          "tp": 5
+        },
+        "time:daytime": {
+          "objects": 30,
+          "tp": 5
+        }
+      },
+      "tp": 5,
+      "fp": 2,
+      "fn": 25
+    },
+    {
+      "sample_id": "b75f814e-4b7257ae",
+      "group_id": "b75f814e",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 16,
+          "tp": 1
+        },
+        "all": {
+          "objects": 18,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 18,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 1,
+      "fn": 17
+    },
+    {
+      "sample_id": "be85bd88-4aad89d7",
+      "group_id": "be85bd88",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 16,
+          "tp": 1
+        },
+        "all": {
+          "objects": 16,
+          "tp": 1
+        },
+        "time:daytime": {
+          "objects": 16,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 1,
+      "fn": 15
+    },
+    {
+      "sample_id": "c59500f0-130d7415",
+      "group_id": "c59500f0",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 12,
+          "tp": 4
+        },
+        "all": {
+          "objects": 13,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 13,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 6,
+      "fn": 9
+    },
+    {
+      "sample_id": "ba336fcb-f0afaac6",
+      "group_id": "ba336fcb",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 6,
+          "tp": 3
+        },
+        "all": {
+          "objects": 6,
+          "tp": 3
+        },
+        "time:undefined": {
+          "objects": 6,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 0,
+      "fn": 3
+    },
+    {
+      "sample_id": "ba0a827b-dfcec16f",
+      "group_id": "ba0a827b",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 4,
+          "tp": 0
+        },
+        "all": {
+          "objects": 5,
+          "tp": 0
+        },
+        "time:night": {
+          "objects": 5,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 2,
+      "fn": 5
+    },
+    {
+      "sample_id": "b6a6df2d-cc93b4c6",
+      "group_id": "b6a6df2d",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 8,
+          "tp": 1
+        },
+        "all": {
+          "objects": 8,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 8,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 0,
+      "fn": 7
+    },
+    {
+      "sample_id": "ba70dfe3-4fd952a1",
+      "group_id": "ba70dfe3",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 9,
+          "tp": 2
+        },
+        "all": {
+          "objects": 11,
+          "tp": 2
+        },
+        "time:night": {
+          "objects": 11,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 2,
+      "fn": 9
+    },
+    {
+      "sample_id": "c0e17fa8-a378411a",
+      "group_id": "c0e17fa8",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 7,
+          "tp": 2
+        },
+        "all": {
+          "objects": 9,
+          "tp": 2
+        },
+        "time:night": {
+          "objects": 9,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 0,
+      "fn": 7
+    },
+    {
+      "sample_id": "c9283177-7531ef01",
+      "group_id": "c9283177",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 16,
+          "tp": 7
+        },
+        "all": {
+          "objects": 16,
+          "tp": 7
+        },
+        "time:dawn/dusk": {
+          "objects": 16,
+          "tp": 7
+        }
+      },
+      "tp": 7,
+      "fp": 0,
+      "fn": 9
+    },
+    {
+      "sample_id": "c9cf175a-131d4aae",
+      "group_id": "c9cf175a",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 9,
+          "tp": 1
+        },
+        "all": {
+          "objects": 10,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 10,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 0,
+      "fn": 9
+    },
+    {
+      "sample_id": "c6866060-6e8de1dd",
+      "group_id": "c6866060",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 15,
+          "tp": 1
+        },
+        "all": {
+          "objects": 16,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 16,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 0,
+      "fn": 15
+    },
+    {
+      "sample_id": "b6db090c-2b1971cf",
+      "group_id": "b6db090c",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 5,
+          "tp": 1
+        },
+        "all": {
+          "objects": 5,
+          "tp": 1
+        },
+        "time:daytime": {
+          "objects": 5,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 0,
+      "fn": 4
+    },
+    {
+      "sample_id": "c1f7cec6-549a06ac",
+      "group_id": "c1f7cec6",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 19,
+          "tp": 6
+        },
+        "all": {
+          "objects": 19,
+          "tp": 6
+        },
+        "time:daytime": {
+          "objects": 19,
+          "tp": 6
+        }
+      },
+      "tp": 6,
+      "fp": 2,
+      "fn": 13
+    },
+    {
+      "sample_id": "c422771c-1619481d",
+      "group_id": "c422771c",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 4,
+          "tp": 2
+        },
+        "all": {
+          "objects": 4,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 4,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 1,
+      "fn": 2
+    },
+    {
+      "sample_id": "bb793416-9423221d",
+      "group_id": "bb793416",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 0,
+          "tp": 0
+        },
+        "all": {
+          "objects": 0,
+          "tp": 0
+        },
+        "time:night": {
+          "objects": 0,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "sample_id": "b975a665-66f04c31",
+      "group_id": "b975a665",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 16,
+          "tp": 5
+        },
+        "all": {
+          "objects": 16,
+          "tp": 5
+        },
+        "time:daytime": {
+          "objects": 16,
+          "tp": 5
+        }
+      },
+      "tp": 5,
+      "fp": 0,
+      "fn": 11
+    },
+    {
+      "sample_id": "c2bd70f5-b518c14f",
+      "group_id": "c2bd70f5",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 12,
+          "tp": 4
+        },
+        "all": {
+          "objects": 13,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 13,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 1,
+      "fn": 9
+    },
+    {
+      "sample_id": "bec94d5a-e7effd81",
+      "group_id": "bec94d5a",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 26,
+          "tp": 4
+        },
+        "all": {
+          "objects": 26,
+          "tp": 4
+        },
+        "time:dawn/dusk": {
+          "objects": 26,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 3,
+      "fn": 22
+    },
+    {
+      "sample_id": "c29e8060-71ad061c",
+      "group_id": "c29e8060",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 1,
+          "tp": 0
+        },
+        "all": {
+          "objects": 1,
+          "tp": 0
+        },
+        "time:night": {
+          "objects": 1,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 0,
+      "fn": 1
+    },
+    {
+      "sample_id": "bb160b7f-0553000b",
+      "group_id": "bb160b7f",
+      "slices": {
+        "target": {
+          "objects": 4,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 12,
+          "tp": 2
+        },
+        "all": {
+          "objects": 16,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 16,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 1,
+      "fn": 14
+    },
+    {
+      "sample_id": "c046b4c6-420f75ad",
+      "group_id": "c046b4c6",
+      "slices": {
+        "target": {
+          "objects": 4,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 18,
+          "tp": 5
+        },
+        "all": {
+          "objects": 22,
+          "tp": 5
+        },
+        "time:night": {
+          "objects": 22,
+          "tp": 5
+        }
+      },
+      "tp": 5,
+      "fp": 2,
+      "fn": 17
+    },
+    {
+      "sample_id": "c586b898-4247945c",
+      "group_id": "c586b898",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 4,
+          "tp": 2
+        },
+        "all": {
+          "objects": 4,
+          "tp": 2
+        },
+        "time:night": {
+          "objects": 4,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 0,
+      "fn": 2
+    },
+    {
+      "sample_id": "c1006024-9713b693",
+      "group_id": "c1006024",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 4,
+          "tp": 0
+        },
+        "all": {
+          "objects": 4,
+          "tp": 0
+        },
+        "time:night": {
+          "objects": 4,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 0,
+      "fn": 4
+    },
+    {
+      "sample_id": "c33ff185-6648dfa9",
+      "group_id": "c33ff185",
+      "slices": {
+        "target": {
+          "objects": 4,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 37,
+          "tp": 3
+        },
+        "all": {
+          "objects": 41,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 41,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 4,
+      "fn": 38
+    },
+    {
+      "sample_id": "be6fd6ac-35af61fd",
+      "group_id": "be6fd6ac",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 6,
+          "tp": 1
+        },
+        "all": {
+          "objects": 6,
+          "tp": 1
+        },
+        "time:dawn/dusk": {
+          "objects": 6,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 1,
+      "fn": 5
+    },
+    {
+      "sample_id": "bf7b93b6-de7552a6",
+      "group_id": "bf7b93b6",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 19,
+          "tp": 4
+        },
+        "all": {
+          "objects": 20,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 20,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 0,
+      "fn": 16
+    },
+    {
+      "sample_id": "b68e35b5-865cf5ee",
+      "group_id": "b68e35b5",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 22,
+          "tp": 2
+        },
+        "all": {
+          "objects": 24,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 24,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 1,
+      "fn": 22
+    },
+    {
+      "sample_id": "bef766cb-f36b2dca",
+      "group_id": "bef766cb",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 14,
+          "tp": 6
+        },
+        "all": {
+          "objects": 14,
+          "tp": 6
+        },
+        "time:daytime": {
+          "objects": 14,
+          "tp": 6
+        }
+      },
+      "tp": 6,
+      "fp": 3,
+      "fn": 8
+    },
+    {
+      "sample_id": "c07ceafc-6060ff3e",
+      "group_id": "c07ceafc",
+      "slices": {
+        "target": {
+          "objects": 6,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 35,
+          "tp": 3
+        },
+        "all": {
+          "objects": 41,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 41,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 0,
+      "fn": 38
+    },
+    {
+      "sample_id": "b4d2dede-9b67d0bd",
+      "group_id": "b4d2dede",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 1
+        },
+        "complement": {
+          "objects": 17,
+          "tp": 3
+        },
+        "all": {
+          "objects": 19,
+          "tp": 4
+        },
+        "time:night": {
+          "objects": 19,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 0,
+      "fn": 15
+    },
+    {
+      "sample_id": "c755d1f0-fc14c3a7",
+      "group_id": "c755d1f0",
+      "slices": {
+        "target": {
+          "objects": 5,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 7,
+          "tp": 2
+        },
+        "all": {
+          "objects": 12,
+          "tp": 2
+        },
+        "time:night": {
+          "objects": 12,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 1,
+      "fn": 10
+    },
+    {
+      "sample_id": "bccad38e-0f5097a8",
+      "group_id": "bccad38e",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 19,
+          "tp": 3
+        },
+        "all": {
+          "objects": 20,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 20,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 0,
+      "fn": 17
+    },
+    {
+      "sample_id": "c1ca33ef-b36cc11b",
+      "group_id": "c1ca33ef",
+      "slices": {
+        "target": {
+          "objects": 4,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 25,
+          "tp": 3
+        },
+        "all": {
+          "objects": 29,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 29,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 1,
+      "fn": 26
+    },
+    {
+      "sample_id": "b75da19e-a29454b7",
+      "group_id": "b75da19e",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 3,
+          "tp": 1
+        },
+        "all": {
+          "objects": 4,
+          "tp": 1
+        },
+        "time:daytime": {
+          "objects": 4,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 1,
+      "fn": 3
+    },
+    {
+      "sample_id": "c4c62e31-64421eb6",
+      "group_id": "c4c62e31",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 10,
+          "tp": 2
+        },
+        "all": {
+          "objects": 10,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 10,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 1,
+      "fn": 8
+    },
+    {
+      "sample_id": "c2461a5a-936bf379",
+      "group_id": "c2461a5a",
+      "slices": {
+        "target": {
+          "objects": 5,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 12,
+          "tp": 5
+        },
+        "all": {
+          "objects": 17,
+          "tp": 5
+        },
+        "time:night": {
+          "objects": 17,
+          "tp": 5
+        }
+      },
+      "tp": 5,
+      "fp": 0,
+      "fn": 12
+    },
+    {
+      "sample_id": "c573d709-4a0dbd2a",
+      "group_id": "c573d709",
+      "slices": {
+        "target": {
+          "objects": 2,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 40,
+          "tp": 5
+        },
+        "all": {
+          "objects": 42,
+          "tp": 5
+        },
+        "time:daytime": {
+          "objects": 42,
+          "tp": 5
+        }
+      },
+      "tp": 5,
+      "fp": 3,
+      "fn": 37
+    },
+    {
+      "sample_id": "c18b5a00-f7a987d8",
+      "group_id": "c18b5a00",
+      "slices": {
+        "target": {
+          "objects": 3,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 14,
+          "tp": 6
+        },
+        "all": {
+          "objects": 17,
+          "tp": 6
+        },
+        "time:daytime": {
+          "objects": 17,
+          "tp": 6
+        }
+      },
+      "tp": 6,
+      "fp": 1,
+      "fn": 11
+    },
+    {
+      "sample_id": "b9597719-cd9a176f",
+      "group_id": "b9597719",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 8,
+          "tp": 3
+        },
+        "all": {
+          "objects": 9,
+          "tp": 3
+        },
+        "time:daytime": {
+          "objects": 9,
+          "tp": 3
+        }
+      },
+      "tp": 3,
+      "fp": 1,
+      "fn": 6
+    },
+    {
+      "sample_id": "bd70577b-57a066d8",
+      "group_id": "bd70577b",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 3,
+          "tp": 0
+        },
+        "all": {
+          "objects": 3,
+          "tp": 0
+        },
+        "time:night": {
+          "objects": 3,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 2,
+      "fn": 3
+    },
+    {
+      "sample_id": "fe189115-c31cac5a",
+      "group_id": "fe189115",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 2,
+          "tp": 2
+        },
+        "all": {
+          "objects": 2,
+          "tp": 2
+        },
+        "time:daytime": {
+          "objects": 2,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "sample_id": "c27e5a2b-ecd48437",
+      "group_id": "c27e5a2b",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 6,
+          "tp": 0
+        },
+        "all": {
+          "objects": 7,
+          "tp": 0
+        },
+        "time:daytime": {
+          "objects": 7,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 1,
+      "fn": 7
+    },
+    {
+      "sample_id": "c7bb5f81-1051148c",
+      "group_id": "c7bb5f81",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 0,
+          "tp": 0
+        },
+        "all": {
+          "objects": 0,
+          "tp": 0
+        },
+        "time:daytime": {
+          "objects": 0,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 0,
+      "fn": 0
+    },
+    {
+      "sample_id": "c0bdac3c-56f7aff3",
+      "group_id": "c0bdac3c",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 2,
+          "tp": 0
+        },
+        "all": {
+          "objects": 2,
+          "tp": 0
+        },
+        "time:night": {
+          "objects": 2,
+          "tp": 0
+        }
+      },
+      "tp": 0,
+      "fp": 0,
+      "fn": 2
+    },
+    {
+      "sample_id": "c0efbe92-2ee3e529",
+      "group_id": "c0efbe92",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 6,
+          "tp": 4
+        },
+        "all": {
+          "objects": 6,
+          "tp": 4
+        },
+        "time:daytime": {
+          "objects": 6,
+          "tp": 4
+        }
+      },
+      "tp": 4,
+      "fp": 2,
+      "fn": 2
+    },
+    {
+      "sample_id": "c0d85a76-c68c9ff0",
+      "group_id": "c0d85a76",
+      "slices": {
+        "target": {
+          "objects": 0,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 12,
+          "tp": 2
+        },
+        "all": {
+          "objects": 12,
+          "tp": 2
+        },
+        "time:night": {
+          "objects": 12,
+          "tp": 2
+        }
+      },
+      "tp": 2,
+      "fp": 1,
+      "fn": 10
+    },
+    {
+      "sample_id": "c2e50057-06f8a09f",
+      "group_id": "c2e50057",
+      "slices": {
+        "target": {
+          "objects": 1,
+          "tp": 0
+        },
+        "complement": {
+          "objects": 6,
+          "tp": 1
+        },
+        "all": {
+          "objects": 7,
+          "tp": 1
+        },
+        "time:night": {
+          "objects": 7,
+          "tp": 1
+        }
+      },
+      "tp": 1,
+      "fp": 0,
+      "fn": 6
+    }
+  ],
+  "precision": 0.7264770240700219,
+  "images": 120
+}

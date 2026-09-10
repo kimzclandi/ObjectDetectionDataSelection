@@ -22,6 +22,13 @@ h1,h2,h3 {letter-spacing:-.025em}
 </style>""",
     unsafe_allow_html=True,
 )
+track = st.sidebar.selectbox("证据轨道", ["历史训练 / VLM 推理", "失败驱动训练 · 新评测集"])
+if track == "失败驱动训练 · 新评测集":
+    from failure_dashboard import show
+
+    show(ROOT)
+    st.stop()
+
 st.caption("DRIVING DATA ENGINE  /  实验工作台  /  v0.1")
 st.title("让每一批道路数据，都有可追踪的选择依据")
 st.write("真实道路图像 → 模型推理 → 样本筛选 → 检测头微调 → 独立评测")

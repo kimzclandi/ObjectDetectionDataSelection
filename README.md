@@ -1,5 +1,7 @@
 # Driving Data Engine · 道路长尾数据闭环
 
+
+> **新增事前冻结的失败驱动实验。** 三种子、等112步、定向/随机各新增12图，另设seed-only对照；120张新评测图。AP×100均值：定向8.595、随机9.229、对照7.609；定向−随机−0.634点，组级区间[−1.631,+0.323]，未支持定向优势。[实际报告](docs/FAILURE_V2_REPORT.md) · [协议/复现](docs/FAILURE_V2_PROTOCOL.md) · [岗位证据](docs/CAPABILITY_EVIDENCE_V2.md) · [面试](docs/DATA_LOOP_INTERVIEW.md)。下文保留旧pilot记录。
 **在固定标注预算下，哪些道路图像值得加入训练？用真实模型和随机对照回答。**
 
 真实道路图像 → 数据契约与去重 → 检测器推理 → 无标签采样 → 检测头微调 → 固定集回归。
@@ -127,3 +129,5 @@ flowchart LR
 9. SmolVLM 仅做 36 张 dev 图像的昼夜标签实验，参考标签未独立人工裁决；不等于全自动标注，也没有 VLM 训练或降本收益。
 
 代码采用 MIT；数据遵循 [BDD100K 原始条款](docs/BDD100K_LICENSE.rst)，不可用代码许可证覆盖数据许可。数据来源与模型链接见 [数据卡](docs/DATA_CARD.md)。
+
+![本次实际 Dashboard](assets/failure-v2-dashboard.png)

@@ -16,3 +16,5 @@ reports/local/
 .env
 *.log
 
+
+reports/**/.*.lock

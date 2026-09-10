@@ -18,5 +18,6 @@
   ],
   "reproducibility": "reports/pilot/reproducibility.json",
   "remote_ci": "See GitHub Actions for per-commit remote status; this is a local receipt",
-  "publication": "Publication is verified separately from local QA"
+  "publication": "Publication is verified separately from local QA",
+  "failure_v2_qa": "reports/failure_v2/qa.json"
 }

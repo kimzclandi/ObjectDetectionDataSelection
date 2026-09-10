@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "state_tensors": 330,
+  "all_final_tensors_bitwise_equal": true,
+  "all_112_losses_equal": true,
+  "interrupted_at_step": 14,
+  "resumed_count": 1,
+  "replay_seconds": 17.882382458999928,
+  "scope": "One CPU seed/run; clean stop after durable optimizer and torch RNG checkpoint. No cross-platform guarantee."
+}

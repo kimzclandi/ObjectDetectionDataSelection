@@ -11,7 +11,17 @@ ROOT = Path(__file__).resolve().parents[1]
 checks = []
 for command in [
     [sys.executable, "-m", "pytest", "-q"],
-    [sys.executable, "-m", "ruff", "check", "src", "tests", "scripts", "dashboard.py"],
+    [
+        sys.executable,
+        "-m",
+        "ruff",
+        "check",
+        "src",
+        "tests",
+        "scripts",
+        "dashboard.py",
+        "failure_dashboard.py",
+    ],
 ]:
     result = subprocess.run(command, cwd=ROOT, text=True, capture_output=True)
     checks.append(
@@ -45,6 +55,7 @@ for folder in ("src", "configs", "tests", "scripts", "docs", "assets", "reports"
         p
         for p in (ROOT / folder).rglob("*")
         if p.is_file()
+        and not p.name.endswith(".lock")
         and "__pycache__" not in p.parts
         and "local" not in p.relative_to(ROOT).parts
         and not any(part.endswith(".egg-info") for part in p.parts)
@@ -58,6 +69,7 @@ files.extend(
         "uv.lock",
         "requirements-lock.txt",
         "dashboard.py",
+        "failure_dashboard.py",
         ".gitignore",
         ".gitattributes",
     )
