@@ -2,6 +2,8 @@
 
 **有限标签解码解决了输出格式问题，但没有解决全部语义错误。** 在同一批 36 张 dev 图像上，自由输出的严格标签一致率为 27.78%，有限标签版本为 91.67%；后者仍有 3 张夜间图像被判断为白天。这不是模型训练收益。
 
+![实际运行的格式约束对照](../assets/vlm-quality.png)
+
 ## 输入、输出与来源
 
 - 模型：[HuggingFaceTB/SmolVLM-256M-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM-256M-Instruct)。
@@ -56,4 +58,3 @@ uv run driving-data vlm-quality --constrained
 - [自由输出原始结果](../reports/pilot/vlm_quality/results.json)
 - [有限标签协议](../reports/pilot/vlm_quality_constrained/protocol.json)
 - [有限标签原始结果](../reports/pilot/vlm_quality_constrained/results.json)
-
