@@ -1,5 +1,7 @@
 # Driving Data Engine · 道路长尾数据闭环
 
+> **开发集诊断 v3：** 完整排序与低分质量项相关0.988，留组原型AUC 0.395；不支持继续凭此原型追加训练。[诊断报告与面试](docs/DIAGNOSIS_V3_REPORT.md) · [逐图证据](reports/diagnosis_v3/result.json)。没有使用测试标签，没有新增训练结论。
+
 
 > **新增事前冻结的失败驱动实验。** 三种子、等112步、定向/随机各新增12图，另设seed-only对照；120张新评测图。AP×100均值：定向8.595、随机9.229、对照7.609；定向−随机−0.634点，组级区间[−1.631,+0.323]，未支持定向优势。[实际报告](docs/FAILURE_V2_REPORT.md) · [协议/复现](docs/FAILURE_V2_PROTOCOL.md) · [岗位证据](docs/CAPABILITY_EVIDENCE_V2.md) · [面试](docs/DATA_LOOP_INTERVIEW.md)。下文保留旧pilot记录。
 **在固定标注预算下，哪些道路图像值得加入训练？用真实模型和随机对照回答。**

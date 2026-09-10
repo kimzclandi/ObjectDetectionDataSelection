@@ -1,0 +1,54 @@
+{
+  "device": "cpu",
+  "mps_built": true,
+  "mps_available": true,
+  "cuda": false,
+  "identity": {
+    "architecture": "fasterrcnn_mobilenet_v3_large_320_fpn",
+    "weight_sha256": "93a87ed9669cc6b10cac501cfa457d534c03735aa1ec91d719b57045c6db0286",
+    "torch": "2.14.0",
+    "torchvision": "0.29.0",
+    "device": "cpu",
+    "platform": "Darwin",
+    "machine": "arm64",
+    "threads": 4,
+    "minimum_score": 0.05,
+    "min_size": 320,
+    "max_size": 640,
+    "classes": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      8,
+      10
+    ],
+    "adapter_version": 1
+  },
+  "ids": [
+    "b43eb946-92f9152d",
+    "b484aa24-d70cf6e5",
+    "b5b44d2d-60f87448",
+    "b6decb24-82234e11",
+    "b7872bf3-ddf64f77",
+    "ba1f5489-3f8e2762"
+  ],
+  "inference_seconds": [
+    0.07870966700284043,
+    0.07446583400451345,
+    0.07453525000164518,
+    0.07460812500357861,
+    0.07421745800093049,
+    0.07404733399744146
+  ],
+  "train_step_seconds": [
+    0.09732337500463473,
+    0.0969278749980731,
+    0.09513433299434837,
+    0.09458525000081863,
+    0.09426829100266332,
+    0.09418779100087704
+  ],
+  "no_checkpoint_written": true
+}
