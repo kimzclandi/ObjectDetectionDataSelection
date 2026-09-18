@@ -12,4 +12,4 @@
 
 ## 学习附件
 
-[实现讲解](INTERVIEW_GUIDE.md)、[选样问答](DATA_LOOP_INTERVIEW.md)、[岗位映射](JD_EVIDENCE.md)、[后续实现索引](CAPABILITY_EVIDENCE_V2.md)是辅助阅读材料，不作为已验证能力或实验成果的证明。
+[实现讲解](METHOD_NOTES.md)、[选样方法](FAILURE_V2_METHOD.md)、[实现地图](IMPLEMENTATION_MAP.md)、[后续实现索引](FAILURE_V2_IMPLEMENTATION.md)提供各轮方法、实现位置及验证边界。

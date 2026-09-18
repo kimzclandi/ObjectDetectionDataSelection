@@ -63,11 +63,9 @@ AP以0–100展示；“±”为三个seed的样本标准差，不是均值置�
 
 来源与许可：[原BDD条款](https://github.com/bdd100k/bdd100k/blob/master/doc/source/license.rst)、[固定镜像](https://huggingface.co/datasets/dgural/bdd100k/tree/c2e7f266756bcd07b87f1a45a35937c8eac20241)、[模型](https://docs.pytorch.org/vision/stable/models/generated/torchvision.models.detection.fasterrcnn_mobilenet_v3_large_320_fpn.html)。图像、原始标注与权重不随Git分发。
 
-## 可直接用于简历
+## 实现摘要
 
 - 基于真实检测器开发漏检设计无标签池选样实验，以共同初始模型、等12图预算、112训练步及3个随机种子比较定向/随机/seed-only，使用120张新增隔离评测图；报告定向相对随机负结果及非目标切片退化。
 - 实现模型/数据/标签身份校验、逐图证据与训练中断恢复；通过330个状态张量和112步loss的真实重放一致性核验，支持从原始预测独立重算指标。
 
-不写“显著提升检测精度”“降低人工成本”或“生产自动驾驶平台”。岗位证据地图见 [能力对照](CAPABILITY_EVIDENCE_V2.md)，面试与现场编程验收见 [面试指南](DATA_LOOP_INTERVIEW.md)。
-
-![本次实际 Dashboard](../assets/failure-v2-dashboard.png)
+实现位置见 [实现索引](FAILURE_V2_IMPLEMENTATION.md)，实验设计见 [方法说明](FAILURE_V2_METHOD.md)。
