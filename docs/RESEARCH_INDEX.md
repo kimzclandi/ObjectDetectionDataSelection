@@ -10,6 +10,6 @@
 
 [旧 pilot 界面截图](../assets/dashboard.png)属于历史实验，不是当前新评测集结果。
 
-## 学习附件
+## 方法文档
 
 [实现讲解](METHOD_NOTES.md)、[选样方法](FAILURE_V2_METHOD.md)、[实现地图](IMPLEMENTATION_MAP.md)、[后续实现索引](FAILURE_V2_IMPLEMENTATION.md)提供各轮方法、实现位置及验证边界。

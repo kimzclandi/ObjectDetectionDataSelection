@@ -44,7 +44,7 @@ uv run streamlit run dashboard.py --server.address 127.0.0.1
 
 - [选样实现](src/driving_data/selection.py)、[训练实现](src/driving_data/training.py)、[后续实验实现](src/driving_data/failure_loop.py)。
 - [架构说明](docs/ARCHITECTURE.md)：Parquet/DuckDB 查询、SQLite 恢复与单机 Ray 实验的职责。
-- [历史与扩展实验](docs/RESEARCH_INDEX.md)：pilot、SmolVLM 昼夜质检、Ray 计时及学习附件。
+- [历史与扩展实验](docs/RESEARCH_INDEX.md)：pilot、SmolVLM 昼夜质检、Ray 计时及方法文档。
 
 ## 主要限制
 
