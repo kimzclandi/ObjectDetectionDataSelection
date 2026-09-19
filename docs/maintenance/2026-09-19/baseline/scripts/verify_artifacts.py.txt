@@ -36,15 +36,6 @@ def verify(root):
             expected[relative] = update["current_sha256"]
     for relative, digest in expected.items():
         path = root / relative
-        if relative in {
-            "src/driving_data/cli.py", "src/driving_data/evaluation.py",
-            "tests/test_evaluation_integrity.py", "scripts/verify_artifacts.py", "README.md",
-        }:
-            archived = root / "docs/maintenance/2026-09-19/baseline" / f"{relative}.txt"
-            # Synthetic fixtures still exercise the original verifier contract.
-            # Real maintenance archives preserve the exact historical bytes.
-            if (root / "docs/maintenance/2026-09-19/README.md").exists():
-                path = archived
         if not path.is_file() or file_hash(path) != digest:
             raise ValueError(f"Artifact mismatch: {relative}")
     return len(expected)
@@ -52,4 +43,4 @@ def verify(root):
 
 if __name__ == "__main__":
     count = verify(Path(__file__).resolve().parents[1])
-    print(f"Verified {count} historical source/config/evidence files; frozen manifest preserved; current code is tested separately")
+    print(f"Verified {count} source/config/evidence files; frozen manifest preserved")

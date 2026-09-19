@@ -99,7 +99,7 @@ def coco_metrics(rows, labels, predictions):
     return {k: float(v) if v >= 0 else None for k, v in zip(keys, evaluator.stats)}
 
 
-def evaluate(root: Path, name="baseline", splits=("dev", "test"), output: Path | None = None):
+def evaluate(root: Path, name="baseline", splits=("dev", "test")):
     manifest = read_json(root / "data/manifest.json")
     prediction_file = root / "reports/pilot" / name / "predictions.json"
     payload = read_json(prediction_file)
@@ -167,16 +167,6 @@ def evaluate(root: Path, name="baseline", splits=("dev", "test"), output: Path |
         "Small = original-image area < 32^2 pixels. Object slices report recall only. "
         "No safety or population-generalization claim.",
     }
-    destination = output if output is not None else prediction_file.parent
-    artifacts = {"evaluation.json": result, "sample_metrics.json": all_samples}
-    # Validate both before writing either. Identical replay is read-only; a changed
-    # result requires an explicitly separate directory, never a frozen-file rewrite.
-    for filename, value in artifacts.items():
-        path = destination / filename
-        if path.exists() and read_json(path) != value:
-            raise ValueError(f"Existing evaluation differs: {path}. Use --output with a new directory.")
-    for filename, value in artifacts.items():
-        path = destination / filename
-        if not path.exists():
-            write_json(path, value)
+    write_json(prediction_file.parent / "evaluation.json", result)
+    write_json(prediction_file.parent / "sample_metrics.json", all_samples)
     return result

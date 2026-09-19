@@ -18,7 +18,6 @@ def main():
     inf.add_argument("--crash-after", type=int)
     ev = sub.add_parser("evaluate")
     ev.add_argument("--name", default="baseline")
-    ev.add_argument("--output", type=Path, help="Separate directory for recomputed metrics")
     sel = sub.add_parser("select")
     sel.add_argument("--budget", type=int, default=12)
     sub.add_parser("experiment")
@@ -28,20 +27,6 @@ def main():
     vlm = sub.add_parser("vlm-quality")
     vlm.add_argument("--constrained", action="store_true")
     args = p.parse_args()
-    if args.command in {
-        "prepare",
-        "infer",
-        "select",
-        "experiment",
-        "benchmark",
-        "controls",
-        "vlm-quality",
-        "catalog",
-    }:
-        if (args.root / "reports/artifact_manifest.json").exists():
-            p.error(
-                "This root contains frozen release evidence. Use --root with a separate execution directory; preserve the original reports."
-            )
     if args.command == "prepare":
         from .data import prepare
 
@@ -57,7 +42,7 @@ def main():
     elif args.command == "evaluate":
         from .evaluation import evaluate
 
-        result = evaluate(args.root, args.name, output=args.output)
+        result = evaluate(args.root, args.name)
     elif args.command == "select":
         from .selection import run_selection
 
