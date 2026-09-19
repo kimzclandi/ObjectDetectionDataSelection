@@ -55,5 +55,3 @@ uv run streamlit run dashboard.py --server.address 127.0.0.1
 - 三个训练种子和小评测集限制统计结论；旧 pilot 的后验等步数消融、失败记录及负结果均保留。
 
 代码 [MIT](LICENSE)；数据遵循 [BDD100K 条款](docs/BDD100K_LICENSE.rst)。
-
-[2026-09-19 工程维护与验证边界](docs/maintenance/2026-09-19/README.md)

@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-19",
+  "base_commit": "f4a804de74fb828dd681141f171203109fa7c3a8",
+  "scope": "Local maintenance verification; no remote CI for this unpushed change and no new model quality claim",
+  "tests_passed": 69,
+  "checks": [
+    {
+      "command": ".venv/bin/ruff check src tests scripts dashboard.py",
+      "returncode": 0
+    },
+    {
+      "command": ".venv/bin/python -m pytest -q",
+      "returncode": 0
+    },
+    {
+      "command": ".venv/bin/python scripts/verify_artifacts.py",
+      "returncode": 0
+    }
+  ],
+  "changed_python_sha256": {
+    "scripts/replay_metrics.py": "f2b60fae1587825528a2c85a5730853bada6404f12e50b9d60dba700abbc6ce8",
+    "scripts/verify_artifacts.py": "a5ac44e150e4929c386dcd7dcc382e3769ede8c51db74ade1d63c4901472b413",
+    "src/driving_data/cli.py": "004594a4a3a261b7b4d567eefc05708c1c1e2ce6d60ddccc897bd280a7e7ea7f",
+    "src/driving_data/evaluation.py": "acb5b3cf9cc55b1d7a3e3c5f9ef89b94c27709d55395ab6db49bd81f6323b873",
+    "tests/test_cli_preservation.py": "f2ab1521348b85d21fa7c5cfde0bb6de7ac8082eb757b845c751daab09ce5f57",
+    "tests/test_evaluation_integrity.py": "4bf4e4b6b48b90d4460fdfe18e5993bc50b4dc3e72cb3139527a48ddf0f3095a"
+  }
+}

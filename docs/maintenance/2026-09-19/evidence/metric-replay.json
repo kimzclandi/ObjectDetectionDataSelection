@@ -1,0 +1,11 @@
+{
+  "images_per_run": 120,
+  "prediction_count": 1200,
+  "mean_AP": {
+    "targeted": 0.08595200761060706,
+    "random": 0.09228993472206372,
+    "seed_only": 0.07609097839700467
+  },
+  "scope": "Saved predictions and hash-verified reference labels; no image/weight verification or neural execution",
+  "current_evaluation_source_sha256": "acb5b3cf9cc55b1d7a3e3c5f9ef89b94c27709d55395ab6db49bd81f6323b873"
+}
