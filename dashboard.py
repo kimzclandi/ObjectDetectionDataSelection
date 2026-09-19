@@ -22,7 +22,7 @@ h1,h2,h3 {letter-spacing:-.025em}
 </style>""",
     unsafe_allow_html=True,
 )
-track = st.sidebar.selectbox("证据轨道", ["历史训练 / VLM 推理", "失败驱动训练 · 新评测集"])
+track = st.sidebar.selectbox("证据轨道", ["失败驱动训练 · 新评测集", "历史训练 / VLM 推理"])
 if track == "失败驱动训练 · 新评测集":
     from failure_dashboard import show
 

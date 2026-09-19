@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-19",
+  "base_commit": "43482ff148b0a2bb7417340410dda32d8b430963",
+  "base_manifest_sha256": "22c1a899c471b32302dcd05e40cc1ae01514d4f530c59a5eff076601f16bdc8c",
+  "scope": "Presentation and validation maintenance only; no experiment result or research identity changes.",
+  "updates": {
+    "README.md": {
+      "previous_sha256": "78c949f3c8336ec9a3ee1835bca1e493384df3abbbe259b90f8a41ccf72f8fb4",
+      "current_sha256": "0269d715d0b3dfacb119dccd359740826bab3d0fc095a19583050e1144ecb2e4",
+      "reason": "Align the default viewer, reproducibility guide and validation with the current saved experiment; preserve research records."
+    },
+    "dashboard.py": {
+      "previous_sha256": "57d0a7d27da1c1b39d945f1187320fdc0e3a121a5f20cff2bb959381ac170245",
+      "current_sha256": "9382dfef21f680c853cd0033e46caa385f4475db7338b1e4ed9a0ccda04c167d",
+      "reason": "Align the default viewer, reproducibility guide and validation with the current saved experiment; preserve research records."
+    },
+    "docs/ARCHITECTURE.md": {
+      "previous_sha256": "2e3772be085bef6740969bbacb0e8c9e6e8a0600411d739ffb752ae9aea69287",
+      "current_sha256": "9ccf235d6335713e28934547e527a6ba9032839a0c8b4e553bab88a4ecf61e8b",
+      "reason": "Align the default viewer, reproducibility guide and validation with the current saved experiment; preserve research records."
+    },
+    "docs/IMPLEMENTATION_MAP.md": {
+      "previous_sha256": "d309952622211c9f8c56fd882d3b834185acff68da821fc5c170b937e8885836",
+      "current_sha256": "5e424e7c45551633935d16afec45fa647441b6f4284d3f06199810b3107ed442",
+      "reason": "Align the default viewer, reproducibility guide and validation with the current saved experiment; preserve research records."
+    },
+    "docs/RUNNING.md": {
+      "previous_sha256": "8776ce5ad46235c08e37e61eed6435017708b874f98c628de3046db7eaf0f5cd",
+      "current_sha256": "2c2ef63352d419fa68061f360fe19c782512dbe79ec109eaacfabd8856621599",
+      "reason": "Align the default viewer, reproducibility guide and validation with the current saved experiment; preserve research records."
+    },
+    "scripts/verify_artifacts.py": {
+      "previous_sha256": "bc256a3c6d43b0452ac7ea427bc2f005d85b650f2b11e8b9beb400083953a68d",
+      "current_sha256": "0774a2bb7dae6c9c43bddc5ad0872abe3826df5cb20a5fcc8ce8df13a31771d6",
+      "reason": "Validate only eight explicitly maintained presentation files; reject research protocols, reports, scripts, data and model-source exemptions."
+    },
+    "tests/test_dashboard.py": {
+      "previous_sha256": "b0e0e32ca939ccf8c38004c91569384232511cc666bf46220fe97c27e0dca086",
+      "current_sha256": "fb6336f5659515b26d896131b99487b5fc36f462b7af4322efbc8f782bee762d",
+      "reason": "Align the default viewer, reproducibility guide and validation with the current saved experiment; preserve research records."
+    },
+    "tests/test_artifact_updates.py": {
+      "previous_sha256": null,
+      "current_sha256": "f431a1c775a116df9d1c5a0d6df4ebf1fa3519511cf26b2e5d7542d2d653fe47",
+      "reason": "Reject evidence, research protocol/report/script/test exemptions, path traversal, old-identity mismatch and altered current bytes."
+    }
+  }
+}

@@ -8,11 +8,11 @@ uv run python scripts/verify_artifacts.py
 uv run streamlit run dashboard.py --server.address 127.0.0.1
 ```
 
-侧栏选择「失败驱动训练 · 新评测集」。`verify_artifacts.py` 校验发布清单，未执行模型训练或重新计算 AP。CI 状态见首页徽标，其测试范围以工作流为准。
+默认打开「失败驱动训练 · 新评测集」。`verify_artifacts.py` 校验发布清单，未执行模型训练或重新计算 AP。CI 状态见首页徽标，其测试范围以工作流为准。
 
 ## 数据准备与历史训练
 
-以下命令会下载数据与固定权重，并执行真实 CPU 训练。仅在需要重跑时使用；参考结果、失败和协议不可覆盖。
+以下命令会写入 `data/`、`reports/` 和训练工作目录，并下载固定权重、执行真实 CPU 训练。先建立独立 checkout，在其中归档参考 `reports/` 后再执行；保留源仓库和原始协议。不要直接在存放发布证据的 checkout 中运行这些命令。
 
 ```bash
 uv run driving-data prepare
@@ -41,3 +41,5 @@ uv run driving-data benchmark
 `reports/artifact_manifest.json` 由 `scripts/qa.py` 定义为可分发文件的发布清单，收录 README、说明文档、源代码与证据。2026-09-11 整理入口时，仅更新被编辑文档的条目并加入新说明页，以继续检查当前发布内容；未重新生成旧 QA 收据。
 
 它不同于 `reports/failure_v2/protocol.json`、各实验 artifact manifest、数据清单和 `reports/diagnosis_v3/protocol.json` 等研究冻结文件。后者及所有预测、训练记录、失败与统计结果保持原字节。文档编辑不授权修改实验身份或重算历史哈希。
+
+2026-09-19 起，展示维护使用 `configs/presentation_updates.json` 显式记录原文件摘要、新文件摘要、原因和基准发布清单摘要。原发布清单保持原字节；校验器只允许此次维护的八个明确文件路径，不按目录或后缀放行；研究协议、研究报告、研究脚本、`data/`、`reports/` 和模型源代码均不能通过该记录豁免。这不是实验结果修正，也不重签研究协议。

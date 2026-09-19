@@ -30,7 +30,7 @@ uv run python scripts/verify_artifacts.py
 uv run streamlit run dashboard.py --server.address 127.0.0.1
 ```
 
-在侧栏选择 **「失败驱动训练 · 新评测集」**查看上表；「历史训练 / VLM 推理」展示早期实验。默认端口为 8501，可用 `--server.port 8512` 自行指定。开发集诊断界面：`uv run streamlit run diagnosis_dashboard.py`。
+默认打开 **「失败驱动训练 · 新评测集」**查看上表；「历史训练 / VLM 推理」展示早期实验。默认端口为 8501，可用 `--server.port 8512` 自行指定。开发集诊断界面：`uv run streamlit run diagnosis_dashboard.py`。
 
 ![已保存的失败驱动训练实验界面](assets/failure-v2-dashboard.png)
 
