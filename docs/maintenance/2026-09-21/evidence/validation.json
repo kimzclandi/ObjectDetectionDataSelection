@@ -1,0 +1,19 @@
+{
+  "date": "2026-09-21",
+  "scope": "New engineering validation; no new model-quality experiment",
+  "tests_passed": 79,
+  "before": "COCO和切片评测缺少前置数值/几何校验，非有限分数、反向框、未知类别和重复评测图像可能进入统计。",
+  "change": "共享校验器要求有限的合法分数、正面积有限框和支持的整数类别；COCO入口拒绝重复图像ID及缺失样本。空检测列表仍是有效漏检并保留在分母。不对图像边界作额外裁剪，不调整评分阈值。",
+  "validation": "10组共1200条保存预测在本机已有且哈希通过的许可标注上重算，与所有原COCO及切片指标一致。未加载图像/权重，未推理或训练。参考标注未新增上传。",
+  "metric_replay": {
+    "images_per_run": 120,
+    "prediction_count": 1200,
+    "mean_AP": {
+      "targeted": 0.08595200761060706,
+      "random": 0.09228993472206372,
+      "seed_only": 0.07609097839700467
+    },
+    "scope": "Saved predictions and hash-verified reference labels; no image/weight verification or neural execution",
+    "current_evaluation_source_sha256": "8c49c0cff8f361545fbce78092c530372eed338897665fc7736198bcaa313fe9"
+  }
+}

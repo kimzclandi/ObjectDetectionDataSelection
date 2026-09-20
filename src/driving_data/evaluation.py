@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import contextlib
 import io
+import math
 from collections import Counter
 from pathlib import Path
 
@@ -17,8 +18,32 @@ def iou(a, b):
     return overlap / union if union > 0 else 0.0
 
 
+def validate_objects(objects, *, predictions=False):
+    """Reject malformed numeric records; an empty prediction list is a valid miss."""
+    if not isinstance(objects, list):
+        raise ValueError("Objects must be a list")
+    for obj in objects:
+        if not isinstance(obj, dict) or type(obj.get("label")) is not int or obj["label"] not in CLASSES:
+            raise ValueError("Unsupported object label")
+        box = obj.get("box")
+        if (
+            not isinstance(box, (list, tuple))
+            or len(box) != 4
+            or any(type(v) not in (int, float) or not math.isfinite(v) for v in box)
+        ):
+            raise ValueError("Box must contain four finite coordinates")
+        if box[2] <= box[0] or box[3] <= box[1]:
+            raise ValueError("Box must have positive width and height")
+        if predictions:
+            score = obj.get("score")
+            if type(score) not in (int, float) or not math.isfinite(score) or not 0 <= score <= 1:
+                raise ValueError("Prediction score must be finite and within [0, 1]")
+
+
 def match_objects(gold, predictions, threshold=0.5):
     """Score-ordered, class-aware one-to-one matching at IoU >= 0.5."""
+    validate_objects(gold)
+    validate_objects(predictions, predictions=True)
     used, matches, fp = set(), [], 0
     for p in sorted(predictions, key=lambda x: -x["score"]):
         if p["score"] < threshold:
@@ -38,6 +63,14 @@ def match_objects(gold, predictions, threshold=0.5):
 
 
 def coco_metrics(rows, labels, predictions):
+    ids = [r["sample_id"] for r in rows]
+    if not ids or len(ids) != len(set(ids)):
+        raise ValueError("Evaluation image IDs must be nonempty and unique")
+    if any(sid not in labels or sid not in predictions for sid in ids):
+        raise ValueError("Missing evaluation labels or predictions")
+    for sid in ids:
+        validate_objects(labels[sid])
+        validate_objects(predictions[sid]["predictions"], predictions=True)
     annotations, detections = [], []
     for image_id, r in enumerate(rows, 1):
         for g in labels[r["sample_id"]]:
