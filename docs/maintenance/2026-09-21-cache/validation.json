@@ -1,0 +1,54 @@
+{
+  "date": "2026-09-21",
+  "base_commit": "62000d206cf54f6514204363cdba9729bc7db165",
+  "full_suite_passed": 88,
+  "new_regressions_passed": 9,
+  "checks": [
+    "ruff check",
+    "pytest -q",
+    "scripts/verify_artifacts.py: 1377 historical files",
+    "scripts/replay_metrics.py: 1200 saved predictions, all metrics match"
+  ],
+  "scope": "Engineering validation; no training or model quality improvement claimed.",
+  "real_inference_cache_smoke": {
+    "completed_utc": "2026-09-20T17:36:03.048408+00:00",
+    "scope": "one existing dev image, CPU detector inference then cache replay; no training or quality claim",
+    "first": {
+      "run_id": "8ce597de5a36693bfca6178d5c8481bc249d91003ab476af03f86d5bcb45215e",
+      "images": 1,
+      "computed": 1,
+      "cache_hits": 0,
+      "recovered_jobs": 0,
+      "job_counts": {
+        "succeeded": 1
+      },
+      "seconds_excluding_model_load": 0.09863329200015869,
+      "effective_images_per_second": 10.138564573089491,
+      "p50_compute_seconds": 0.09629087499342859,
+      "p95_compute_seconds": 0.09629087499342859,
+      "latency_note": "Per-image original compute latency; throughput includes cache hits when present."
+    },
+    "second": {
+      "run_id": "8ce597de5a36693bfca6178d5c8481bc249d91003ab476af03f86d5bcb45215e",
+      "images": 1,
+      "computed": 0,
+      "cache_hits": 1,
+      "recovered_jobs": 0,
+      "job_counts": {
+        "succeeded": 1
+      },
+      "seconds_excluding_model_load": 0.0011731249978765845,
+      "effective_images_per_second": 852.4240825232183,
+      "p50_compute_seconds": 0.09629087499342859,
+      "p95_compute_seconds": 0.09629087499342859,
+      "latency_note": "Per-image original compute latency; throughput includes cache hits when present."
+    },
+    "predictions_identical": true,
+    "model_sha256": "93a87ed9669cc6b10cac501cfa457d534c03735aa1ec91d719b57045c6db0286",
+    "image_sha256": "7d91892110a14c19e0cb126e644df17964f7b8e976672d7e64c00cd5cbbb86cd",
+    "source_sha256": "702383686aeab4ead4d15f12a065cff5d70db6e7bcdeda1a1990560c7686b938"
+  },
+  "source_sha256": {
+    "src/driving_data/model.py": "702383686aeab4ead4d15f12a065cff5d70db6e7bcdeda1a1990560c7686b938"
+  }
+}

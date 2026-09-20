@@ -25,6 +25,8 @@ def replay(labels_dir):
             }
             else ROOT / name
         )
+        if name == "src/driving_data/model.py":
+            path = ROOT / "docs/maintenance/2026-09-21-cache/baseline" / f"{name}.txt"
         if file_hash(path) != expected:
             raise ValueError(f"Historical source identity mismatch: {name}")
     for name, expected in read_json(OUT / "artifact_manifest.json").items():

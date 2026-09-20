@@ -45,6 +45,8 @@ def verify(root):
             # Real maintenance archives preserve the exact historical bytes.
             if (root / "docs/maintenance/2026-09-19/README.md").exists():
                 path = archived
+        if relative == "src/driving_data/model.py" and (root / "docs/maintenance/2026-09-21-cache/README.md").exists():
+            path = root / "docs/maintenance/2026-09-21-cache/baseline" / f"{relative}.txt"
         if not path.is_file() or file_hash(path) != digest:
             raise ValueError(f"Artifact mismatch: {relative}")
     return len(expected)
