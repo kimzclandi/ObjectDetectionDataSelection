@@ -61,3 +61,5 @@ uv run streamlit run dashboard.py --server.address 127.0.0.1
 代码 [MIT](LICENSE)；数据遵循 [BDD100K 条款](docs/BDD100K_LICENSE.rst)。
 
 [2026-09-19 工程维护与验证边界](docs/maintenance/2026-09-19/README.md)
+
+[2026-09-21 工程维护与验证](docs/maintenance/2026-09-21/README.md)
