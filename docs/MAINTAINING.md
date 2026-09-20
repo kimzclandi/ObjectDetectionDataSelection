@@ -18,16 +18,27 @@ actual test and replay commands. The existing workflow and ignore rules are incl
 remain unchanged. The new documentation workflow has its own concurrency and timeout
 settings. No inference or training coverage is implied.
 
-[Documentation CI](../.github/workflows/documentation.yml) runs a dependency-free Python
-check for local file links in README, contribution/conduct guidance, the PR template and
-this page. It also checks whitespace in the changed entry-point documents and `.github/` files,
-using a two-commit checkout so historical frozen records are not treated as new files. It does not validate external URLs, heading
-anchors, SVG rendering or every historical document. New linked files must be staged
-with `git add` before the local check so they are included in `git ls-files`.
+[Documentation CI](../.github/workflows/documentation.yml) checks maintained entry points,
+the experiment guide, and the running/reproduction guide when present. It validates
+tracked local file targets and ordinary Markdown heading fragments, including
+same-page anchors, percent-encoded Chinese fragments and repeated headings. Each
+page is checked once. Code fences are ignored, and repository-escaping paths are rejected.
+
+The check supports inline Markdown/HTML links and ATX/setext headings. External URLs,
+reference-style links, non-Markdown fragments, complex embedded HTML and rendered
+layout require separate review. This is not a complete GitHub Markdown renderer.
+New linked files must be staged with `git add` before the local check.
 
 ```sh
+python3 .github/scripts/test_doc_links.py
 python3 .github/scripts/check_docs.py
 ```
+
+Regression tests deliberately introduce a removed heading, an untracked file and a
+path outside the repository. Documentation CI also checks whitespace in changed
+entry-point documents and guides using a two-commit checkout; frozen reports remain
+outside the maintained-document scan. A green navigation check does not mean model
+inference or training was rerun.
 
 ## Releases
 
