@@ -16,7 +16,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Test navigation failure detection
+        run: python .github/scripts/test_doc_links.py
       - name: Check maintained local links
         run: python .github/scripts/check_docs.py
       - name: Check whitespace
-        run: git diff --check HEAD^ HEAD -- README.md README.zh-CN.md CONTRIBUTING.md CODE_OF_CONDUCT.md docs/MAINTAINING.md docs/NAMING.md .github
+        run: git diff --check HEAD^ HEAD -- README.md README.zh-CN.md CONTRIBUTING.md CODE_OF_CONDUCT.md docs/MAINTAINING.md docs/NAMING.md docs/EXPERIMENT_GUIDE.md docs/RUNNING.md docs/REPRODUCE.md .github
