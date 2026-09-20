@@ -20,7 +20,8 @@ settings. No inference or training coverage is implied.
 
 [Documentation CI](../.github/workflows/documentation.yml) runs a dependency-free Python
 check for local file links in README, contribution/conduct guidance, the PR template and
-this page. It also checks commit whitespace. It does not validate external URLs, heading
+this page. It also checks whitespace in the changed entry-point documents and `.github/` files,
+using a two-commit checkout so historical frozen records are not treated as new files. It does not validate external URLs, heading
 anchors, SVG rendering or every historical document. New linked files must be staged
 with `git add` before the local check so they are included in `git ls-files`.
 
