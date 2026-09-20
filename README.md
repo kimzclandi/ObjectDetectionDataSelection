@@ -1,5 +1,7 @@
 # 面向目标检测的数据选择与训练对照
 
+**简体中文** | [English](README.en.md)
+
 ![Project wordmark](.github/project-header.svg)
 
 [![CI](https://github.com/kimzclandi/ObjectDetectionDataSelection/actions/workflows/ci.yml/badge.svg)](https://github.com/kimzclandi/ObjectDetectionDataSelection/actions/workflows/ci.yml)
