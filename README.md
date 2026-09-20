@@ -1,12 +1,19 @@
 # 小样本目标检测数据选择实验
 
-2026-09-21: [缓存完整性与恢复验证 / Cache integrity maintenance](docs/maintenance/2026-09-21-cache/README.md).
+![Project wordmark](.github/project-header.svg)
 
 [![CI](https://github.com/kimzclandi/driving-data-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/kimzclandi/driving-data-engine/actions/workflows/ci.yml)
+[![Stars](https://img.shields.io/github/stars/kimzclandi/driving-data-engine?style=flat)](https://github.com/kimzclandi/driving-data-engine/stargazers) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 在 BDD100K 子集上研究：固定新增图像预算时，哪些图像值得加入检测器训练？仓库实现了随机、不确定性、多样性选样，以及从开发集漏检构造原型的定向选样。各组共用预训练 Faster R-CNN MobileNetV3，**仅微调 ROI 预测头**；当前实验没有证明定向选样稳定优于随机。
 
 `driving-data-engine` 是本机资源下的个人研究项目。输入为道路图像及已有标注，产物包括选样名单、训练记录、逐图预测和分组评测；标注在选样后提供给训练流程，用于模拟新增标注。
+
+## 功能特性 / Features
+
+- 固定预算的随机、不确定性和多样性选样。
+- ROI 预测头训练、失败切片和定向选样诊断。
+- 锁定依赖、记录校验与结果界面。
 
 ## 项目沿革（2026-09-20 补记）
 
@@ -26,12 +33,23 @@
 
 [训练对照报告](docs/FAILURE_V2_REPORT.md) · [开发集诊断](docs/DIAGNOSIS_V3_REPORT.md) · [原始训练结果](reports/failure_v2/summary.json) · [诊断记录](reports/diagnosis_v3/result.json)
 
-## 查看与运行
+## 快速开始 / Quick Start
 
 从仓库根目录安装锁定依赖，先查看已保存结果；此路径不下载图像或运行训练。
 
+### Installation / 安装
+
+需要先安装 [uv](https://docs.astral.sh/uv/getting-started/installation/)；以下命令在仓库根目录执行。
+
 ```bash
+git clone https://github.com/kimzclandi/driving-data-engine.git
+cd driving-data-engine
 uv sync --locked --python 3.12 --extra dashboard --extra dev
+```
+
+### Usage / 使用示例
+
+```bash
 uv run python scripts/verify_artifacts.py
 uv run streamlit run dashboard.py --server.address 127.0.0.1
 ```
@@ -65,3 +83,15 @@ uv run streamlit run dashboard.py --server.address 127.0.0.1
 [2026-09-19 工程维护与验证边界](docs/maintenance/2026-09-19/README.md)
 
 [2026-09-21 工程维护与验证](docs/maintenance/2026-09-21/README.md)
+
+2026-09-21: [缓存完整性与恢复验证 / Cache integrity maintenance](docs/maintenance/2026-09-21-cache/README.md).
+
+## Contributing / 参与贡献
+
+[贡献指南](CONTRIBUTING.md) · [行为准则](CODE_OF_CONDUCT.md) · [结构与维护](docs/MAINTAINING.md)
+
+[反馈问题](https://github.com/kimzclandi/driving-data-engine/issues/new?template=bug_report.yml) · [建议功能](https://github.com/kimzclandi/driving-data-engine/issues/new?template=feature_request.yml)
+
+## License
+
+Project code: [MIT](LICENSE). BDD100K data: [upstream terms](docs/BDD100K_LICENSE.rst). Model weights retain their upstream license.
