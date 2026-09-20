@@ -20,7 +20,7 @@ DOCS = [
     "docs/EXPERIMENT_GUIDE.md",
     ".github/PULL_REQUEST_TEMPLATE.md",
 ]
-OPTIONAL_DOCS = ["README.zh-CN.md", "docs/RUNNING.md", "docs/REPRODUCE.md"]
+OPTIONAL_DOCS = ["README.en.md", "README.zh-CN.md", "docs/RUNNING.md", "docs/REPRODUCE.md"]
 
 
 def without_fences(content):
