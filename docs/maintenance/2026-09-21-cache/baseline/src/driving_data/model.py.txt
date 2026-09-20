@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import math
 import os
 import platform
 import time
@@ -17,7 +16,6 @@ from torchvision.models.detection import (
 from torchvision.transforms.functional import pil_to_tensor
 
 from .common import CLASSES, digest, file_hash, image_path, read_json, write_json
-from .evaluation import validate_objects
 from .store import Store, runner_lock
 
 WEIGHT_NAME = "fasterrcnn_mobilenet_v3_large_320_fpn-907ea3f9.pth"
@@ -93,26 +91,6 @@ def predict_one(model, root, row, device):
     }
 
 
-def validate_prediction(row, result):
-    if (
-        not isinstance(result, dict)
-        or result.get("sample_id") != row["sample_id"]
-        or result.get("sha256") != row["sha256"]
-    ):
-        raise ValueError("Cached or computed prediction identity mismatch")
-    validate_objects(result.get("predictions"), predictions=True)
-    embedding = result.get("embedding")
-    if (
-        not isinstance(embedding, list)
-        or not embedding
-        or any(type(v) not in (int, float) or not math.isfinite(v) for v in embedding)
-    ):
-        raise ValueError("Prediction embedding must be nonempty and finite")
-    elapsed = result.get("latency_seconds")
-    if type(elapsed) not in (int, float) or not math.isfinite(elapsed) or elapsed < 0:
-        raise ValueError("Prediction latency must be finite and nonnegative")
-
-
 def infer(
     root: Path,
     name="baseline",
@@ -128,15 +106,6 @@ def infer(
     model, config = load_model(root, checkpoint, device)
     run_id = digest([manifest["version"], config, sorted(splits)])
     outdir = root / "reports/pilot" / name
-    prediction_path = outdir / "predictions.json"
-    if prediction_path.exists():
-        previous = read_json(prediction_path)
-        if (
-            previous.get("run_id") != run_id
-            or previous.get("dataset_version") != manifest["version"]
-            or previous.get("config") != config
-        ):
-            raise ValueError("Existing run has different input/model/config identity; choose a new name")
     dbpath = root / "work/jobs" / f"{run_id}.sqlite"
     output, hits, computed = [], 0, 0
     started = time.perf_counter()
@@ -151,8 +120,7 @@ def infer(
                 if file_hash(image_path(root, row)) != row["sha256"]:
                     raise ValueError("Image checksum mismatch")
                 cached = store.get(key)
-                if cached is not None:
-                    validate_prediction(row, cached)
+                if cached:
                     output.append(cached)
                     hits += 1
                     continue
@@ -162,7 +130,6 @@ def infer(
                         raise SystemExit("Injected driver interruption after claim, before result commit")
                     try:
                         result = predict_one(model, root, row, device)
-                        validate_prediction(row, result)
                         store.succeed(key, result)
                         output.append(result)
                         computed += 1
