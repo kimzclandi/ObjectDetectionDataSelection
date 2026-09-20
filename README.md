@@ -1,13 +1,13 @@
-# Detection Data Selection
+# 面向目标检测的数据选择与训练对照
 
 ![Project wordmark](.github/project-header.svg)
 
-[![CI](https://github.com/kimzclandi/detection-data-selection/actions/workflows/ci.yml/badge.svg)](https://github.com/kimzclandi/detection-data-selection/actions/workflows/ci.yml)
-[![Stars](https://img.shields.io/github/stars/kimzclandi/detection-data-selection?style=flat)](https://github.com/kimzclandi/detection-data-selection/stargazers) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![CI](https://github.com/kimzclandi/ObjectDetectionDataSelection/actions/workflows/ci.yml/badge.svg)](https://github.com/kimzclandi/ObjectDetectionDataSelection/actions/workflows/ci.yml)
+[![Stars](https://img.shields.io/github/stars/kimzclandi/ObjectDetectionDataSelection?style=flat)](https://github.com/kimzclandi/ObjectDetectionDataSelection/stargazers) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 在 BDD100K 子集上研究：固定新增图像预算时，哪些图像值得加入检测器训练？仓库实现了随机、不确定性、多样性选样，以及从开发集漏检构造原型的定向选样。各组共用预训练 Faster R-CNN MobileNetV3，**仅微调 ROI 预测头**；当前实验没有证明定向选样稳定优于随机。
 
-`detection-data-selection` 是本机资源下的个人研究项目。输入为道路图像及已有标注，产物包括选样名单、训练记录、逐图预测和分组评测；标注在选样后提供给训练流程，用于模拟新增标注。
+`ObjectDetectionDataSelection` 是本机资源下的个人研究项目。输入为道路图像及已有标注，产物包括选样名单、训练记录、逐图预测和分组评测；标注在选样后提供给训练流程，用于模拟新增标注。
 
 ## 功能特性 / Features
 
@@ -42,8 +42,8 @@
 需要先安装 [uv](https://docs.astral.sh/uv/getting-started/installation/)；以下命令在仓库根目录执行。
 
 ```bash
-git clone https://github.com/kimzclandi/detection-data-selection.git
-cd detection-data-selection
+git clone https://github.com/kimzclandi/ObjectDetectionDataSelection.git
+cd ObjectDetectionDataSelection
 uv sync --locked --python 3.12 --extra dashboard --extra dev
 ```
 
@@ -90,7 +90,7 @@ uv run streamlit run dashboard.py --server.address 127.0.0.1
 
 [贡献指南](CONTRIBUTING.md) · [行为准则](CODE_OF_CONDUCT.md) · [结构与维护](docs/MAINTAINING.md)
 
-[反馈问题](https://github.com/kimzclandi/detection-data-selection/issues/new?template=bug_report.yml) · [建议功能](https://github.com/kimzclandi/detection-data-selection/issues/new?template=feature_request.yml)
+[反馈问题](https://github.com/kimzclandi/ObjectDetectionDataSelection/issues/new?template=bug_report.yml) · [建议功能](https://github.com/kimzclandi/ObjectDetectionDataSelection/issues/new?template=feature_request.yml)
 
 ## License
 
