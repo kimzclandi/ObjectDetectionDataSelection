@@ -1,12 +1,32 @@
-# 小样本目标检测数据选择实验
+# 面向目标检测的数据选择与训练对照
 
-2026-09-21: [缓存完整性与恢复验证 / Cache integrity maintenance](docs/maintenance/2026-09-21-cache/README.md).
+![Project wordmark](.github/project-header.svg)
 
-[![CI](https://github.com/kimzclandi/driving-data-engine/actions/workflows/ci.yml/badge.svg)](https://github.com/kimzclandi/driving-data-engine/actions/workflows/ci.yml)
+[![CI](https://github.com/kimzclandi/ObjectDetectionDataSelection/actions/workflows/ci.yml/badge.svg)](https://github.com/kimzclandi/ObjectDetectionDataSelection/actions/workflows/ci.yml)
+[![Stars](https://img.shields.io/github/stars/kimzclandi/ObjectDetectionDataSelection?style=flat)](https://github.com/kimzclandi/ObjectDetectionDataSelection/stargazers) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 在 BDD100K 子集上研究：固定新增图像预算时，哪些图像值得加入检测器训练？仓库实现了随机、不确定性、多样性选样，以及从开发集漏检构造原型的定向选样。各组共用预训练 Faster R-CNN MobileNetV3，**仅微调 ROI 预测头**；当前实验没有证明定向选样稳定优于随机。
 
-`driving-data-engine` 是本机资源下的个人研究项目。输入为道路图像及已有标注，产物包括选样名单、训练记录、逐图预测和分组评测；标注在选样后提供给训练流程，用于模拟新增标注。
+`ObjectDetectionDataSelection` 是本机资源下的个人研究项目。输入为道路图像及已有标注，产物包括选样名单、训练记录、逐图预测和分组评测；标注在选样后提供给训练流程，用于模拟新增标注。
+
+## 功能特性 / Features
+
+- 固定预算的随机、不确定性和多样性选样。
+- ROI 预测头训练、失败切片和定向选样诊断。
+- 锁定依赖、记录校验与结果界面。
+
+## 系统组成与数据流
+
+| 层次 | 输入 → 输出 | 工程与实验约束 |
+|---|---|---|
+| 数据接入 | 图像、标注 → 可核验元数据和异常记录 | 解码、框和摘要检查；原始图像另行准备 |
+| 推理恢复 | 图像与固定模型 → 缓存预测和任务状态 | SQLite 事务提交；允许重复计算，不重复提交结果 |
+| 数据选择 | 候选池与开发集失败 → 固定图数名单 | 对照共享预算；已有标注模拟新增标注 |
+| 训练评测 | 共同起点与名单 → 逐图预测、AP 和切片 | 匹配步数、三个种子，只训练 ROI 预测头 |
+
+## 阅读与复核路径 / Reading and verification
+
+[实验与工程复核指南](docs/EXPERIMENT_GUIDE.md)按输入输出、控制变量、指标分母、代码与证据路径组织说明，并区分保存结果核验和实际重跑。首次阅读建议先看本页结果与限制，再按指南追踪具体记录；运行前阅读对应环境和输出保护说明。
 
 ## 项目沿革（2026-09-20 补记）
 
@@ -26,12 +46,23 @@
 
 [训练对照报告](docs/FAILURE_V2_REPORT.md) · [开发集诊断](docs/DIAGNOSIS_V3_REPORT.md) · [原始训练结果](reports/failure_v2/summary.json) · [诊断记录](reports/diagnosis_v3/result.json)
 
-## 查看与运行
+## 快速开始 / Quick Start
 
 从仓库根目录安装锁定依赖，先查看已保存结果；此路径不下载图像或运行训练。
 
+### Installation / 安装
+
+需要先安装 [uv](https://docs.astral.sh/uv/getting-started/installation/)；以下命令在仓库根目录执行。
+
 ```bash
+git clone https://github.com/kimzclandi/ObjectDetectionDataSelection.git
+cd ObjectDetectionDataSelection
 uv sync --locked --python 3.12 --extra dashboard --extra dev
+```
+
+### Usage / 使用示例
+
+```bash
 uv run python scripts/verify_artifacts.py
 uv run streamlit run dashboard.py --server.address 127.0.0.1
 ```
@@ -65,3 +96,17 @@ uv run streamlit run dashboard.py --server.address 127.0.0.1
 [2026-09-19 工程维护与验证边界](docs/maintenance/2026-09-19/README.md)
 
 [2026-09-21 工程维护与验证](docs/maintenance/2026-09-21/README.md)
+
+2026-09-21: [缓存完整性与恢复验证 / Cache integrity maintenance](docs/maintenance/2026-09-21-cache/README.md).
+
+## Contributing / 参与贡献
+
+[贡献指南](CONTRIBUTING.md) · [行为准则](CODE_OF_CONDUCT.md) · [结构与维护](docs/MAINTAINING.md)
+
+[反馈问题](https://github.com/kimzclandi/ObjectDetectionDataSelection/issues/new?template=bug_report.yml) · [建议功能](https://github.com/kimzclandi/ObjectDetectionDataSelection/issues/new?template=feature_request.yml)
+
+## License
+
+Project code: [MIT](LICENSE). BDD100K data: [upstream terms](docs/BDD100K_LICENSE.rst). Model weights retain their upstream license.
+
+[项目名称与兼容性说明 / Naming and compatibility](docs/NAMING.md)
