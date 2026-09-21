@@ -5,15 +5,15 @@
 在仓库根目录、已安装项目 Python 依赖的环境中运行：
 
 ```bash
-python scripts/demo_inference_recovery.py --output work/interview-recovery-01
-cat work/interview-recovery-01/summary.json
+python scripts/demo_inference_recovery.py --output work/recovery-demo-01
+cat work/recovery-demo-01/summary.json
 ```
 
 输出目录必须不存在。脚本会启动三个独立子进程；`interrupt.log`、`resume.log`、`replay.log` 保留各阶段收据。第一个进程在第二个任务已提交 `running`、结果尚未提交时结束，退出码为 73。此时第一个任务已完成，第二个任务为 `running`，最终 `predictions.json` 尚不存在。
 
 第二个进程重启时把那个 `running` 任务恢复成 `pending`：第一个任务命中缓存，第二、三个任务执行替身预测，最终三个结果全部发布。任务尝试次数分别为 1、2、1；`jobs` 表每个内容 key 只有一行。第三个进程再运行时三个任务全部命中缓存，`computed=0`，最终预测文件哈希与任务表均不变。脚本逐项断言这些条件，不符合即失败。
 
-面试时可用这条状态链解释三种不同概念：
+这条状态链区分三种不同概念：
 
 - **进程中断**：任务可能已计算或正在计算，但没有提交结果；需要重试。
 - **幂等提交**：相同内容 key 最多有一条可见的成功记录；不等于计算只执行一次。
