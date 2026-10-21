@@ -5,7 +5,7 @@
 ![Project wordmark](.github/project-header.svg)
 
 [![CI](https://github.com/kimzclandi/ObjectDetectionDataSelection/actions/workflows/ci.yml/badge.svg)](https://github.com/kimzclandi/ObjectDetectionDataSelection/actions/workflows/ci.yml)
-[![Stars](https://img.shields.io/github/stars/kimzclandi/ObjectDetectionDataSelection?style=flat)](https://github.com/kimzclandi/ObjectDetectionDataSelection/stargazers) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 在 BDD100K 子集上研究：固定新增图像预算时，哪些图像值得加入检测器训练？仓库实现了随机、不确定性、多样性选样，以及从开发集漏检构造原型的定向选样。各组共用预训练 Faster R-CNN MobileNetV3，**仅微调 ROI 预测头**；当前实验没有证明定向选样稳定优于随机。
 
