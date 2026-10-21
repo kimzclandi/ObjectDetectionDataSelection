@@ -5,7 +5,7 @@
 ![Project wordmark](.github/project-header.svg)
 
 [![CI](https://github.com/kimzclandi/ObjectDetectionDataSelection/actions/workflows/ci.yml/badge.svg)](https://github.com/kimzclandi/ObjectDetectionDataSelection/actions/workflows/ci.yml)
-[![Stars](https://img.shields.io/github/stars/kimzclandi/ObjectDetectionDataSelection?style=flat)](https://github.com/kimzclandi/ObjectDetectionDataSelection/stargazers) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 Which images should be added to detector training under a fixed additional-image budget? This BDD100K subset study implements random, uncertainty and diversity selection, plus targeted selection using prototypes derived from development-set misses. All arms share pretrained Faster R-CNN MobileNetV3 and **finetune only the ROI predictor head**. Current experiments do not show a stable advantage of targeted selection over random selection.
 
